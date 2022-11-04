@@ -1,0 +1,32 @@
+.position-filter266
+    .area__header
+        p.area__name Dropdown
+        p.area__name-fn Default 
+    .area__body
+        input.area__input-dropdown-default.position-input-area.js-dropdown-expanded(
+            type="text"
+            autocomplete="off" 
+            placeholder="2 спальни, 2 кровати..."
+            )
+        span.material-icons#js-default-hidden.js-dropdown-expanded expand_more
+    .area__block-list-expanded
+        .area__list
+            .area__list-dropdown
+                ul 
+                    li Спальни
+                    li Кровати
+                    li Ванные комнаты 
+            .area__list-btn
+                ul
+                    li.area__list-btn_col
+                        button.js-first-elem-min -
+                        span.js-counter 2
+                        button.js-first-elem-plus +
+                    li.area__list-btn_col
+                        button.js-second-elem-min -
+                        span 2
+                        button.js-second-elem-plus +
+                    li.area__list-btn_col
+                        button.js-third-elem-min -
+                        span 2
+                        button.js-third-elem-plus +

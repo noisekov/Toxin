@@ -1,0 +1,29 @@
+@import '../find-number/find-number.scss';
+@import '../registration/registration.scss';
+@import '../appartment/appartment.scss';
+.cards__container{
+    display: flex;
+    background-color: #F4F4F6;
+    justify-content: space-around;
+    padding: 0 140px 140px;
+    // flex-wrap: wrap;
+}
+.cards__container_left {
+    margin-right: 40px;
+}
+.cards__container_middle {
+    margin-right: 40px;
+}
+.cards-position10 {
+    margin-bottom: 10px;
+}
+.cards-position20 {
+    margin-bottom: 20px;
+}
+.cards-position30 {
+    margin-bottom: 30px;
+}
+.cards-position40 {
+    margin-bottom: 40px;
+}
+

@@ -1,0 +1,68 @@
+.area__toggle {
+    & .switch:checked,
+     .switch:not(:checked){
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+    & .switch:checked + label,
+     .switch:not(:checked) + label{
+        position: relative;
+        display: inline-block;
+        padding-left: 50px;
+        line-height: 21px;
+        cursor: pointer;
+    }
+    & .switch:not(:checked) + label::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 20px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 10px;
+    }
+    & .switch:checked + label::before{    
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 20px;
+        border: 1px solid #8BA4F9;
+        border-radius: 10px;
+    }
+    & .switch:not(:checked) + label::after{
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 14px;
+        height: 14px;
+        background-color:  rgba(31, 32, 65, 0.25);
+        border-radius:100%;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }  
+    & .switch:checked + label::after{
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 23px;
+        width: 14px;
+        height: 14px;
+        background-color:  #8BA4F9;
+        border-radius:100%;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }    
+}
+.area__toggle li {
+    margin-bottom: 14px;
+}

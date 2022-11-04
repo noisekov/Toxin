@@ -1,0 +1,48 @@
+.appartment
+    .appartment__photo
+        ul 
+            li.appartment__img.current
+                img(src = require("../../images/appartment1.png"), alt="appartment")
+            li.appartment__img
+                img(src = require("../../images/appartment2.png"), alt="appartment2") 
+            li.appartment__img
+                img(src = require("../../images/appartment3.jpg"), alt="appartment3") 
+            li.appartment__img
+                img(src = require("../../images/appartment4.jpg"), alt="appartment4") 
+        .appartment__slider-bar 
+            button.appartment__slider-bar-dots.current
+            button.appartment__slider-bar-dots
+            button.appartment__slider-bar-dots
+            button.appartment__slider-bar-dots
+        //- button#js-slide-left 
+        //-     span.material-icons.material-icons_img-left expand_more
+        //- button#js-slide-right 
+        //-     span.material-icons.material-icons_img-right expand_more
+    .appartment__body 
+        .appartment__title 
+            .find-number__header.cards-position20
+                .find-number__name №<span>888</span> <span>люкс</span>
+                .find-number__title <span>9 990₽</span> в сутки
+            .appartment-feedback
+                fieldset    
+                    .rate-button__group
+                        input.rate-button__input(type="radio" name="star-second" value="1" id="star-app-1")
+                        label.rate-button__star(for="star-app-1" aria-label="the worst") 
+                            //- span.material-icons_star.material-icons star
+
+                        input.rate-button__input(type="radio" name="star-second" value="2" id="star-app-2")
+                        label.rate-button__star(for="star-app-2" aria-label="bad") 
+                            //- span.material-icons_star.material-icons star
+
+                        input.rate-button__input(type="radio" name="star-second" value="3" id="star-app-3")
+                        label.rate-button__star(for="star-app-3" aria-label="normal") 
+                            //- span.material-icons_star.material-icons star  
+
+                        input.rate-button__input(type="radio" name="star-second" value="4" id="star-app-4" )
+                        label.rate-button__star(for="star-app-4" aria-label="good") 
+                            //- span.material-icons_star.material-icons star
+
+                        input.rate-button__input(type="radio" name="star-second" value="5" id="star-app-5" checked)
+                        label.rate-button__star(for="star-app-5" aria-label="perfect") 
+                            //- span.material-icons_star.material-icons star
+                .appartment-block <span>145</span> Отзывов

@@ -1,0 +1,83 @@
+@import "nullstyle.scss";
+@import "../components/headers & footers/footer/footer.scss";
+@import "../components/headers & footers/header/header.scss";
+@import "../components/headers & footers/footer-mobile/footer-mobile.scss";
+@import "../components/colors&type/colors&type.scss";
+@import "../components/form-elements/form-elements.scss";
+@import "../components/cards/cards.scss";
+@import "../components/pagination/pagination.scss";
+@import "../components/air-datepicker/air-datepicker.scss";
+@import "../components/range-slider/range-slider.scss";
+@import "../components/toggle/toggle.scss";
+@import "../components/like-button/like-button.scss";
+@import "../components/dropdown-guest/dropdown-guest.scss";
+@import "../components/dropdown-default/dropdown-default.scss";
+@import "../components/expandable-checkbox/expandable-checkbox.scss";
+@import "../components/rate-button/rate-button.scss";
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.eot'), url('../fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.eot'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@mixin mb($mb) {
+	margin-bottom: ($mb);
+}
+html,
+body {
+    font-family: 'Montserrat';
+    background-color: #F4F4F6;
+    color:rgba(31, 32, 65, 1);
+	font-weight: 400;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+	overflow: hidden; 
+	padding: 0 140px;
+	@media (max-width:1180px) {
+		padding: 0 10px;
+		max-width: 1180px;
+	}
+}
+.first-logo {
+	margin: 30px 0 62px 30px;
+}
+// position teg into index.pug
+.mb40 {
+	margin-bottom: 40px;
+}
+//toxin-navigation index.pug
+.toxin-navigation {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.toxin-navigation a {
+	padding: 8px;
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+	color: #BC9CFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	border: 3px solid #BC9CFF;
+	&:hover {
+		color: #FFFFFF;
+		background-color: #BC9CFF;
+	}
+}

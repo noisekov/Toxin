@@ -1,0 +1,19 @@
+.area__input-dropdown-default {
+    color:  rgba(31, 32, 65, 0.75);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+}
+.area__block-list-expanded {
+    display: none;
+}
+.area__block-list-expanded.\.active-expanded {
+    position: absolute;
+    display: flex;
+    z-index: 5;
+    background: #ffffff;
+    width: 266px;
+    flex-direction: column;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 0 0 4px 4px;
+}

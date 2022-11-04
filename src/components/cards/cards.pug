@@ -1,0 +1,57 @@
+.cards
+    .cards__container
+        .cards__container_left 
+            form(action="#") 
+                include ../find-number/find-number.pug
+            form(action="#") 
+                include ../registration/registration.pug
+        .cards__container_middle 
+            form(action="#") 
+                include ../choice/choice.pug
+            form(action="#" method="POST") 
+                include ../entry/entry.pug
+        .cards__container_right 
+            form(action="#") 
+                .calendar.cards-position40#calendar
+            .cards-position40
+                include ../appartment/appartment.pug
+            .appartment 
+                .appartment__photo
+                    ul 
+                        li: img(src = require("../../images/appartment2.png"), alt="appartment")
+                        li 
+                        li 
+                        li 
+                    .appartment__slider-bar 
+                        ul
+                            button
+                            button
+                            button
+                            button
+                .appartment__body 
+                    .appartment__title 
+                        .find-number__header.cards-position20
+                            .find-number__name №<span>840</span> <span></span>
+                            .find-number__title <span>9 990₽</span> в сутки
+                        .appartment-feedback
+                            fieldset
+                                .rate-button__group
+                                    input.rate-button__input(type="radio" name="star-third" value="1" id="star-app-second-1")
+                                    label.rate-button__star(for="star-app-second-1" aria-label="the worst") 
+
+                                    input.rate-button__input(type="radio" name="star-third" value="2" id="star-app-second-2")
+                                    label.rate-button__star(for="star-app-second-2" aria-label="bad") 
+
+                                    input.rate-button__input(type="radio" name="star-third" value="3" id="star-app-second-3")
+                                    label.rate-button__star(for="star-app-second-3" aria-label="normal") 
+
+                                    input.rate-button__input(type="radio" name="star-third" value="4" id="star-app-second-4" checked)
+                                    label.rate-button__star(for="star-app-second-4" aria-label="good") 
+
+                                    input.rate-button__input(type="radio" name="star-third" value="5" id="star-app-second-5" )
+                                    label.rate-button__star(for="star-app-second-5" aria-label="perfect") 
+                            .appartment-block <span>65</span> Отзывов
+            
+                    
+
+                

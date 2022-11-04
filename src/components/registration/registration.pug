@@ -1,0 +1,49 @@
+.registration
+    h1.cards-position20 Регистрация аккаунта
+    .position-filter320
+        input#field.area__input.cards-position10.position-input-large-area(
+            type="text"
+            placeholder="Имя" 
+            )
+        input#field.area__input.cards-position10.position-input-large-area(
+            type="text"
+            placeholder="Фамилия"
+            )
+        ul.area__radio-buttons.cards-position20
+            li 
+                input#reg1(
+                    type="radio" 
+                    name="reg"
+                    checked
+                    )
+                label(for="reg1") Мужчина 
+            li 
+                input#reg2(
+                    type="radio"
+                    name="reg"
+                    )
+                label(for="reg2") Женщина 
+        label.area__header.area__name(for="masked-text-field") Дата рождения
+        input#masked-text-field.cards-position20.area__masked-text-field.position-input-large-area(
+            type="text"
+            placeholder="дд.мм.гг"
+            ) 
+        label(for="field").area__header.area__name Данные для входа в сервис 
+        input#field.area__input.cards-position10.position-input-large-area(
+            type="text"
+            placeholder="Email"
+            )
+        input#field.area__input.cards-position10.position-input-large-area(
+            type="text"
+            placeholder="Пароль"
+            )
+        .area__toggle.cards-position20
+            input#reg-sw.switch(
+                type="checkbox"
+                )
+            label(for="reg-sw") Получать спецпредложения 
+        a(href="#").cards-position30.button-pay__link Перейти к оплате
+            span.material-icons.material-icons_white arrow_forward  
+        .registration__sign-in 
+            p Уже есть аккаунт на Toxin
+            a.button-click-sec Войти
