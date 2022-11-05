@@ -18,7 +18,7 @@ module.exports = {
     devServer: {
         port: 3000,
         open: true,
-        hot: true, //отключить если будет плохо обновляться браузер
+        // hot: true, //отключить если будет плохо обновляться браузер
     },
     entry: ["@babel/polyfill", path.resolve(__dirname, 'src', 'main.js')],
     output: {

@@ -97,22 +97,7 @@ if (drop.length >= 1){
       }
    })
    //-----------
-
-
 }
-//Remove style dropdown if click to window missing
-
-// document.addEventListener("click" , function (){
-//    dropdownGuest.forEach(item =>{
-//       item.classList.remove(".active-guest");
-//       })
-//    dropImg.forEach(dropImg => {
-//       dropImg.classList.remove(".material-icons_rotate");
-//    })
-//    styleField.forEach(styleField => {
-//       styleField.classList.remove(".active-guest");
-//    })
-// })
 
 
 $(document).ready(() => {
