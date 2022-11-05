@@ -60,26 +60,34 @@
     }
 }
 .form-elements__container {
-    display: flex;
+    margin: 0 auto;
+    width: 1440px;
     padding: 0 140px 100px 142px;
-    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.form-elements__footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 140px 131px 142px;
-    flex-wrap: wrap;
+// .form-elements__footer {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 0 140px 131px 142px;
+//     flex-wrap: wrap;
+// }
+.mb104 {
+    margin-bottom: 104px;
+}
+.form-elements__icons-block {
+    grid-column: 1/2;
 }
 .form-elements_left {
-    margin-right: 126px;
+    margin-right: 105px;
 }
 .form-elements_middle {
     margin-right: 72px;
 }
 .form-elements__review {
-    flex: 0 1 710px;
+    grid-column: 2/4;
 }
-.area__radio-buttons{
+.area__radio-buttons {
     display: flex;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.5);
@@ -172,14 +180,14 @@
 }
 .area__expandable-checkbox-list {
     & input[type="checkbox"]:checked,
-     input[type="checkbox"]:not(:checked){
+    input[type="checkbox"]:not(:checked){
         position: absolute;
         opacity: 0;
         visibility: hidden;
         z-index: -1;
     }
     & input[type="checkbox"]:checked + label,
-     input[type="checkbox"]:not(:checked) + label{
+    input[type="checkbox"]:not(:checked) + label{
         position: relative;
         display: inline-block;
         padding-left: 30px;
@@ -206,8 +214,8 @@
             border: 1px solid #8BA4F9;
             border-radius: 4px;
     }
-   & input[type="checkbox"]:checked + label::after,
-   input[type="checkbox"]:not(:checked) + label::after{
+    & input[type="checkbox"]:checked + label::after,
+    input[type="checkbox"]:not(:checked) + label::after{
         content: "";
         position: absolute;
         top: 6px;
@@ -269,7 +277,7 @@
 }
 .area__body {
     position: relative; 
-    display: flex;
+    // display: flex;
 }
 .area__input-date-dropdown {
     position: relative;
@@ -472,9 +480,6 @@
         line-height: 24px;
         color: rgba(31, 32, 65, 0.75);
     }
-}
-.review__block {
-    margin-right: 14px;
 }
 .button-position {
     margin: 0 23px 30px 1px;

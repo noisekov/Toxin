@@ -1,24 +1,5 @@
-//VERSION WITHOUT MATERIAL ICONS EASY VERSION
-// const btnLike = document.querySelectorAll(".like-button");
-// const valueLike = document.querySelector(".like-button__value");
-// let result;
-// document.addEventListener("click", heart)
-// function  heart(e) {
-//     if (e.target.closest("#js-like-button")){
-//         e.preventDefault();
-//         for (let i = 0; i < btnLike.length; i ++){
-//             btnLike[i].classList.toggle(".like-button_active")
-//         }
-//         result = +valueLike.innerHTML;
-//         result++;
-//         valueLike.innerHTML=""
-//         valueLike.innerHTML = result
-//     }  
-// }
-
-
-//VERSION WITH MATERIAL ICONS HARD VERSION:D
-const btnsLike = document.querySelectorAll("#js-like-color");
+//like counter
+const btnsLike = document.querySelectorAll(".js-like-color");
 const likeImg = document.querySelectorAll('.material-icons_like');
 const likeLabel = document.querySelectorAll(".js-like-count");
 

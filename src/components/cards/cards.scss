@@ -2,11 +2,10 @@
 @import '../registration/registration.scss';
 @import '../appartment/appartment.scss';
 .cards__container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #F4F4F6;
-    justify-content: space-around;
-    padding: 0 140px 140px;
-    // flex-wrap: wrap;
+    padding: 7px 179px 141px 178px;
 }
 .cards__container_left {
     margin-right: 40px;
@@ -19,6 +18,9 @@
 }
 .cards-position20 {
     margin-bottom: 20px;
+}
+.cards-position25 {
+    margin-bottom: 25px;
 }
 .cards-position30 {
     margin-bottom: 30px;

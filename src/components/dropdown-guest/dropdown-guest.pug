@@ -1,49 +1,50 @@
 .position-filter320
     .area__header 
         p.area__name Dropdown
-    .area__body#js-input-guest
-        span.material-icons#js-dropdown-hidden expand_more
-        input.area__input-guest.position-input-large-area(
-            type="text" 
-            placeholder="Сколько гостей"
-            autocomplete="off"
-            )
-    .area__block-list-hidden
-        .area__list
-            .area__list-dropdown
-                ul 
-                    li Взрослые
-                    li Дети
-                    li Младенцы
-            .area__list-btn  
-                ul  
-                    li.area__list-btn_col
-                        button#btnMinus -
-                        span#countValue 0
-                        button#btnPlus +
-                    li.area__list-btn_col
-                        button#btnMinusChild -
-                        span#countValueChild 0
-                        button#btnPlusChild +
-                    li.area__list-btn_col
-                        button -
-                        span 0
-                        button +
-        .area__button
-            button Применить
+    .area__body.js-input-guest
+    .iqdropdown
+        p.iqdropdown-selection
+        .iqdropdown-menu
+            .iqdropdown-menu-option(data-id='item1')
+                div
+                    p.iqdropdown-item Взрослые
+            .iqdropdown-menu-option(data-id='item2')
+                div
+                    p.iqdropdown-item Дети
+            .iqdropdown-menu-option(data-id='item3')
+                div
+                    p.iqdropdown-item Младенцы
 
-.iqdropdown
-  p.iqdropdown-selection
-  .iqdropdown-menu
-    .iqdropdown-menu-option(data-id='item1')
-      div
-        p.iqdropdown-item Взрослые
-    .iqdropdown-menu-option(data-id='item2')
-      div
-        p.iqdropdown-item Дети
-    .iqdropdown-menu-option(data-id='item3')
-      div
-        p.iqdropdown-item Младенцы
+    //-     span.material-icons.js-dropdown-hidden expand_more
+    //-     input.area__input-guest.position-input-large-area(
+    //-         type="text" 
+    //-         placeholder="Сколько гостей"
+    //-         autocomplete="off"
+    //-         )
+    //- .area__block-list-hidden
+    //-     .area__list
+    //-         .area__list-dropdown
+    //-             ul 
+    //-                 li Взрослые
+    //-                 li Дети
+    //-                 li Младенцы
+    //-         .area__list-btn  
+    //-             ul  
+    //-                 li.area__list-btn_col
+    //-                     button#btnMinus -
+    //-                     span#countValue 0
+    //-                     button#btnPlus +
+    //-                 li.area__list-btn_col
+    //-                     button#btnMinusChild -
+    //-                     span#countValueChild 0
+    //-                     button#btnPlusChild +
+    //-                 li.area__list-btn_col
+    //-                     button -
+    //-                     span 0
+    //-                     button +
+    //-     .area__button
+    //-         button Применить
+
 
 
 
