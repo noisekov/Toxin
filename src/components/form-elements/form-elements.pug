@@ -1,32 +1,27 @@
 include ../toggle/toggle.pug
+include ../input-field/input-field.pug
 .form-elements
     a(href="/")
         img.first-logo(src = require("./images/first-logo.svg"), alt="first-logo")
     .form-elements__container
         .form-elements_left
             .form-elements__text-field
-                .position-filter320
-                    .area__header
-                        label.area__name(for="field") Text field 
-                        span.area__name-fn default 
-                    input#field.area__input.position-input-large-area(
-                        type="text" 
-                        placeholder="Email" 
-                        )
+                +input-field('Email')
             .form-elements__text-field
                 .position-filter320
                     .area__header  
-                        label.area__name(for="field_active") Text field
+                        label.area__name Text field
                         span.area__name-fn Hover / Focus 
-                    input#field_active.area__input_active.position-input-large-area(
+                    input.area__input_active.position-input-large-area(
                         type="text" 
                         placeholder="This is pretty awesome"
                         )
             .form-elements__dropdown-guest
                 include ../dropdown-guest/dropdown-guest.pug
             .form-elements__masked-text-field
-                label.area__header.area__name(for="masked-text-field") Masked text field
-                input#masked-text-field.area__masked-text-field.position-input-large-area(
+                fieldset.area__header.area__name
+                    legend Masked text field
+                input.area__masked-text-field.position-input-large-area(
                     type="text" 
                     placeholder="дд.мм.гг" 
                     ) 
@@ -161,10 +156,10 @@ include ../toggle/toggle.pug
                 include ../rate-button/rate-button.pug
             .form-elements__dropdown
                 .position-filter320
-                    label.area__header.area__name(for="dropdown") Dropdown 
+                    label.area__header.area__name Dropdown 
                     .area__body
                         span.material-icons expand_more
-                        input#dropdown.area__input-dropdown-default.position-input-large-area(
+                        input.area__input-dropdown-default.position-input-large-area(
                             type="text"
                             placeholder="Сколько гостей"
                             autocomplete='off'
@@ -227,10 +222,10 @@ include ../toggle/toggle.pug
                 include ../pagination/pagination.pug
             .form-elements__dropdown
                 .position-filter320
-                    label.area__header.area__name(for="dropdown") Dropdown 
+                    label.area__header.area__name Dropdown 
                     .area__body
                         span.material-icons expand_more
-                        input#dropdown.area__input-dropdown-default.position-input-large-area(
+                        input.area__input-dropdown-default.position-input-large-area(
                             type="text"
                             placeholder="3 гостя"
                             autocomplete='off'

@@ -270,6 +270,9 @@
     color: #1F2041;
 }
 .area__name-fn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 15px;
@@ -325,8 +328,9 @@
 }
 .area__header{
     margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
 }
 .area__input {
     border: 1px solid rgba(31, 32, 65, 0.25);

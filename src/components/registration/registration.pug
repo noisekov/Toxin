@@ -23,11 +23,12 @@
                     name="reg"
                     )
                 label(for="reg2") Женщина 
-        label.area__header.area__name(for="masked-text-field") Дата рождения
-        input#masked-text-field.cards-position20.area__masked-text-field.position-input-large-area(
-            type="text"
-            placeholder="дд.мм.гг"
-            ) 
+        fieldset 
+            legend.area__header.area__name Дата рождения
+            input.cards-position20.area__masked-text-field.position-input-large-area(
+                type="text"
+                placeholder="дд.мм.гг"
+                ) 
         label(for="field").area__header.area__name Данные для входа в сервис 
         input#field.area__input.cards-position10.position-input-large-area(
             type="text"
