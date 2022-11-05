@@ -59,14 +59,14 @@
 }
 .material-icons {
     &_img-left {
-        transform: rotate(90deg);
-        top: 42%;
+        transform: translateY(-50%) rotate(90deg);
+        color: #FFFFFF;
         right: 88%;
         color: #FFFFFF;
     }
     &_img-right {
-        transform: rotate(-90deg);
-        top: 42%;
+        transform: translateY(-50%) rotate(-90deg);
+        color: #FFFFFF;
         right: 4%;
         color: #FFFFFF;
     }

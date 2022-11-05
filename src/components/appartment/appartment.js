@@ -1,32 +1,24 @@
-const appartImg = document.querySelectorAll(".appartment__img");
-const appartDots = document.querySelectorAll(".appartment__slider-bar-dots");
-const appartBar = document.querySelector(".appartment__slider-bar");
-const appartSliderBar = document.querySelectorAll(".appartment__slider-bar");
+const appartments = document.querySelectorAll(".appartment");
 
-if (appartSliderBar.length > 0) {
-    appartSliderBar.forEach(el => {
-        el.addEventListener("click", function(e){
-            console.log(this);
-        })
-    })
-}
+appartments.forEach(appartment => {
+    const appartDots = appartment.querySelectorAll(".appartment__slider-bar-dots");
+    const appartImg = appartment.querySelectorAll(".appartment__img");
 
-
-appartDots.forEach(el => {
-    el.addEventListener("click", function(e){
-        if (e.target.closest(".appartment__slider-bar-dots")){
-            appartDots.forEach(e => {
-                e.classList.remove("current");
-            })
-            this.classList.add("current");
-            appartImg.forEach(e => {
-                e.classList.remove("current");
-                for (let i = 0; i < appartImg.length; i++){
-                    if(this == appartDots[i]){
+    appartDots.forEach(dots => {
+        dots.addEventListener("click", function(evt) {
+            if (evt.target.closest(".appartment__slider-bar-dots")){
+                appartDots.forEach(dot => {
+                    dot.classList.remove("current");
+                })
+                this.classList.add("current");
+                appartImg.forEach((img, i) => {
+                    img.classList.remove("current");
+                    if (this == appartDots[i]) {
                         appartImg[i].classList.add("current")
                     }
-                }
-            })
-        }
-    })
-});
+                })
+            }
+        })
+    });
+})
+
