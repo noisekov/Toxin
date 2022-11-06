@@ -13,3 +13,6 @@ import './components/headers & footers/header/header';
 
 import 'item-quantity-dropdown/lib/item-quantity-dropdown.min';
 import 'item-quantity-dropdown/lib/item-quantity-dropdown.min.css';
+
+import 'jquery.maskedinput/src/jquery.maskedinput';
+import './components/field/field';

@@ -16,8 +16,8 @@
 }
 .appartment__slider-bar{
     position: absolute;
-    top:80%;
-    left: 79%;
+    bottom:15px;
+    right: 10px;
 }
 .appartment__slider-bar-dots {
     width: 7.5px;
@@ -57,17 +57,31 @@
         width: 230px;
     }
 }
-.material-icons {
-    &_img-left {
-        transform: translateY(-50%) rotate(90deg);
-        color: #FFFFFF;
-        right: 88%;
-        color: #FFFFFF;
-    }
-    &_img-right {
-        transform: translateY(-50%) rotate(-90deg);
-        color: #FFFFFF;
-        right: 4%;
-        color: #FFFFFF;
-    }
+.material-icons_img-left {
+    transform: translateY(-50%) rotate(90deg);
+    color: #FFFFFF;
+    right: 0;
+}
+.material-icons_img-right {
+    transform: translateY(-50%) rotate(-90deg);
+    color: #FFFFFF;
+    right: 0;
+}
+.js-slide-left {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width: 20px;
+    transform: translateY(-50%);
+    background: inherit;
+    height: 20px;
+}
+.js-slide-right {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 20px;
+    transform: translateY(-50%);
+    background: inherit;
+    height: 20px;
 }

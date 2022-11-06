@@ -1,21 +1,14 @@
 include ../toggle/toggle.pug
-include ../input-field/input-field.pug
+include ../field/field.pug
 .form-elements
     a(href="/")
         img.first-logo(src = require("./images/first-logo.svg"), alt="first-logo")
     .form-elements__container
         .form-elements_left
             .form-elements__text-field
-                +input-field('Email')
+                +field(class="area__input")
             .form-elements__text-field
-                .position-filter320
-                    .area__header  
-                        label.area__name Text field
-                        span.area__name-fn Hover / Focus 
-                    input.area__input_active.position-input-large-area(
-                        type="text" 
-                        placeholder="This is pretty awesome"
-                        )
+                +field('This is pretty awesome', 'Hover / Focus ')(class="area__input_active")
             .form-elements__dropdown-guest
                 include ../dropdown-guest/dropdown-guest.pug
             .form-elements__masked-text-field
@@ -155,7 +148,7 @@ include ../input-field/input-field.pug
             .form-elements__rate-button
                 include ../rate-button/rate-button.pug
             .form-elements__dropdown
-                .position-filter320
+                .mw320
                     label.area__header.area__name Dropdown 
                     .area__body
                         span.material-icons expand_more
@@ -221,7 +214,7 @@ include ../input-field/input-field.pug
             .form-elements__pagination 
                 include ../pagination/pagination.pug
             .form-elements__dropdown
-                .position-filter320
+                .mw320
                     label.area__header.area__name Dropdown 
                     .area__body
                         span.material-icons expand_more
