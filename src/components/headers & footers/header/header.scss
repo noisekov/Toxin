@@ -1,12 +1,12 @@
 @import "../../colors&type/colors&type.scss";
 header {
     background-color: #ffffff;
-    padding: 26px 0;
 }
 .header {
     display: flex;
     align-items: center;
     justify-content:space-between;
+    height: 70px;
 }
 .header__nav {
     display: flex;
@@ -18,12 +18,12 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-right: 40px;
+    margin-right: 33px;
 }
 .nav__item {
-    margin-right:20px;
+    margin-right:21px;
     &:nth-child(2){
-        margin-right: 30px;
+        margin-right: 46px;
     }
     &:last-child {
         margin-right: 10px;
@@ -45,7 +45,7 @@ header {
 .nav__button-entry {
     border: 2px solid $purple;
     border-radius: 22px;
-    padding: 7px 20px 8px;
+    padding: 7px 18px 8px;
     font-weight: 700;
     font-size: 12px;
     line-height: calc(15 / 12 * 100%);
@@ -67,18 +67,15 @@ header {
 }
 .nav__user {
     position: relative;
-    & a {
+    &-link {
         line-height: calc(17 / 14 * 100%);
         color: $darkshade5;
-    }
-    &::before {
-        content: "";
-        position: absolute;
-        top: -8px;
-        left: -20px;
-        width: 1px;
+        border-left: 1px solid rgba(31, 32, 65, 0.1);
+        padding-left: 19px;
+        line-height: 121.4285714286%;
         height: 30px;
-        background: rgba(31, 32, 65, 0.1);
+        display: inline-flex;
+        align-items: center;
     }
 }
 .header__burger {

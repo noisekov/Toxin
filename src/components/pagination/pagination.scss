@@ -1,8 +1,11 @@
+.pagination {
+    margin-left: 1px;
+}
 .pagination__body {
     font-size: 12px;
     line-height: 40px;
     color: rgba(31, 32, 65, 0.5);
-    margin-bottom: 11px;
+    margin-bottom: 9px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -46,17 +49,16 @@
 .pagination__count {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
+    margin-left: 4px;
 }
-.pagination-slider_position{
-    margin-bottom: 20px;
+.mb16 {
+    margin-bottom: 16px;
 }
 .material-icons_pagination-right {
-    // top: 7px;
     left: 8px;
     color: #ffffff;
 }
 .material-icons_pagination-left {
-    // top: 7px;
     left: 8px;
     color: #ffffff;
     transform:rotate(180deg)

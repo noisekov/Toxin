@@ -1,16 +1,16 @@
 .choice 
     .find-number 
-        .find-number__header.cards-position20
+        .find-number__header.mb17
             .find-number__name №<span>888</span> <span>люкс</span>
             .find-number__title <span>9 990₽</span> в сутки
-        .find-number__dropdown.cards-position20
+        .find-number__dropdown
             .date
                 .date-dropdown
                     .area__header 
                         label.area__name(for="date-picker") Прибытие
                     .area__body
                         span.material-icons expand_more
-                        input#cal-two-input-choice.area__input-date-dropdown.position-filter150(
+                        input#cal-two-input-choice.area__input-date-dropdown.mw150(
                             type="text" 
                             placeholder="19.08.2019" 
                             autocomplete="off"
@@ -20,18 +20,18 @@
                         label.area__name(for="date-picker") Выезд
                     .area__body
                         span.material-icons expand_more
-                        input.area__input-date-dropdown.position-filter150(
+                        input.area__input-date-dropdown.mw150(
                             type="text" 
                             placeholder="23.08.2019" 
                             autocomplete="off"
                             )
-        .find-number__guest.cards-position20
+        .find-number__guest.mb20
             .mw320
                 .area__header 
                     p.area__name Гости
-                .area__body.js-input-guest.cards-position25
+                .area__body.js-input-guest.mb25
                     span.material-icons.js-dropdown-hidden expand_more
-                    input.area__input-guest.position-input-large-area(
+                    input.area__input-guest.position-input_large(
                         type="text" 
                         placeholder="3 гостя"
                         )
@@ -58,12 +58,12 @@
                                     button +
                     .area__button
                         button Применить
-            .find-number__body-block.cards-position10
+            .find-number__body-block.mb10
                 .find-number__body-block_left
                     p 9 990₽ х 4 суток
                 .find-number__body-block_right
                     p 39 960₽
-            .find-number__body-block.cards-position10
+            .find-number__body-block.mb10
                 .find-number__body-block_left
                     p Сбор за услуги: скидка 2 179₽
                     span(title="Вам бесплатно:)") i
@@ -75,7 +75,7 @@
                     span(title="Обязательный сбор") i
                 .find-number__body-block_right
                     p 300₽
-        .find-number__price.cards-position20 
+        .find-number__price.mb20 
             p Итого
             span 
             p 38 081₽

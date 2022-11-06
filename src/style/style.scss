@@ -5,6 +5,7 @@
 @import "../components/headers & footers/footer-mobile/footer-mobile.scss";
 @import "../components/colors&type/colors&type.scss";
 @import "../components/form-elements/form-elements.scss";
+@import "../components/choice/choice.scss";
 @import "../components/cards/cards.scss";
 @import "../components/pagination/pagination.scss";
 @import "../components/air-datepicker/air-datepicker.scss";
@@ -56,10 +57,6 @@ body {
 .first-logo {
 	margin: 30px 0 65px 70px;
 }
-// position teg into index.pug
-.mb40 {
-	margin-bottom: 40px;
-}
 //toxin-navigation index.pug
 .toxin-navigation {
 	padding-top: 50px;
@@ -81,4 +78,7 @@ body {
 		color: #FFFFFF;
 		background-color: #BC9CFF;
 	}
+}
+.mb40 {
+    margin-bottom: 40px;
 }

@@ -1,12 +1,12 @@
 .find-number 
-    h1.cards-position20 Найдём номера под ваши пожелания
-    .find-number__dropdown.cards-position20
+    h1.mb20 Найдём номера под ваши пожелания
+    .find-number__dropdown
         .date
             .date-dropdown
                 label.area__header.area__name(for="date-picker-cal1") Прибытие
                 .area__body
                     span.material-icons expand_more
-                    input#cal-two-input-find-number.area__input-date-dropdown.position-filter150(
+                    input#cal-two-input-find-number.area__input-date-dropdown.mw150(
                         type="text" 
                         placeholder="дд.мм.гг" 
                         autocomplete="off"
@@ -15,17 +15,17 @@
                 label.area__header.area__name(for="date-picker-cal2") Выезд
                 .area__body
                     span.material-icons expand_more
-                    input.area__input-date-dropdown.position-filter150(
+                    input.area__input-date-dropdown.mw150(
                         type="text" 
                         placeholder="дд.мм.гг" 
                         autocomplete="off"
                         )
-    .find-number__body.cards-position30
+    .find-number__body.mb30
         .mw320
             p.area__header.area__name Гости
             .area__body.js-input-guest
                 span.material-icons.js-dropdown-hidden expand_more
-                input.area__input-guest.position-input-large-area(
+                input.area__input-guest.position-input_large(
                     type="text" 
                     placeholder="Сколько гостей"
                     )

@@ -1,19 +1,19 @@
 .cards
     .cards__container
-        .cards__container_left 
+        .cards__container_left
             form(action="#") 
                 include ../find-number/find-number.pug
             form(action="#") 
                 include ../registration/registration.pug
-        .cards__container_middle 
+        .cards__container_middle
             form(action="#") 
                 include ../choice/choice.pug
             form(action="#" method="POST") 
                 include ../entry/entry.pug
         .cards__container_right 
             form(action="#") 
-                .calendar.cards-position40#calendar
-            .cards-position40
+                .calendar.mb40#calendar
+            .mb40
                 include ../appartment/appartment.pug
             .appartment 
                 .appartment__photo
@@ -34,7 +34,7 @@
                             button.appartment__slider-bar-dots
                 .appartment__body 
                     .appartment__title 
-                        .find-number__header.cards-position20
+                        .find-number__header.mb20
                             .find-number__name №<span>840</span> <span></span>
                             .find-number__title <span>9 990₽</span> в сутки
                         .appartment-feedback

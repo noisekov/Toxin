@@ -17,7 +17,7 @@
         margin-bottom: 40px;
     }
     &__checkbox-buttons {
-        margin-bottom: 40px;
+        margin-bottom: 38px;
     }
     &__radio-buttons{
         margin-bottom: 37px;
@@ -26,7 +26,7 @@
         margin-bottom: 199px;
     }
     &__pagination {
-        margin-bottom: 212px;
+        margin-bottom: 232px;
     }
     &__dropdown{
         margin-bottom: 98px;
@@ -35,16 +35,16 @@
         margin-bottom: 40px;
     }
     &__buttons {
-        margin-bottom: 40px;
+        margin-bottom: 31px;
     }
     &__range-slider{
-        margin-bottom: 40px;
+        margin-bottom: 44px;
     }
     &__toggle {
-        margin-bottom: 40px;
+        margin-bottom: 44px;
     }
     &__button-pay {
-        margin-bottom: 47px;
+        margin-bottom: 40px;
     }
     &__dropdown-default {
         margin-bottom: 20px;
@@ -66,14 +66,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-// .form-elements__footer {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 0 140px 131px 142px;
-//     flex-wrap: wrap;
-// }
 .mb104 {
     margin-bottom: 104px;
+}
+.mb11 {
+    margin-bottom: 11px;
 }
 .form-elements__icons-block {
     grid-column: 1/2;
@@ -95,14 +92,14 @@
         margin-right: 20px;
     }
     & input[type="radio"]:checked,
-     input[type="radio"]:not(:checked){
+    input[type="radio"]:not(:checked){
         position: absolute;
         opacity: 0;
         visibility: hidden;
         z-index: -1;
     }
     & input[type="radio"]:checked + label,
-     input[type="radio"]:not(:checked) + label{
+    input[type="radio"]:not(:checked) + label{
         position: relative;
         display: inline-block;
         padding-left: 30px;
@@ -166,6 +163,8 @@
         float: left;
     }
 }
+
+// ЧТО-ТО ТУТ НЕ ТАК ПОСЛЕ АВТОЗАМЕНЫ ОБРАТИ ВНИМАНИЕ ПРИ РЕФАКТОРИНГЕ
 .area__list-dropdown {
     margin-left: 13px;
 }
@@ -244,7 +243,7 @@
 .area__expandable-checkbox-list li {
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
-    margin: 0 0 10px 0px;
+    margin: 0 0 8px 0px;
     &:first-child {
         margin-top: 5px;
     }
@@ -280,7 +279,6 @@
 }
 .area__body {
     position: relative; 
-    // display: flex;
 }
 .area__input-date-dropdown {
     position: relative;
@@ -326,11 +324,9 @@
         } 
     }
 }
-.area__header{
+.area__header {
     margin-bottom: 5px;
     position: relative;
-    // display: flex;
-    // justify-content: space-between;
 }
 .area__input {
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -399,13 +395,11 @@
     cursor: default;
 }
 .material-icons_arrow {
-    top: -17px;
-    right: 12px;
+    right: 0;
     color: #8BA4F9;
     font-size: 24px;
 }
 .material-icons_hd {
-    // top: -4px;
     right: -23px;
 }
 .material-icons_white {
@@ -454,9 +448,6 @@
         background: rgba(31, 32, 65, 0.1);
     }
 }
-.checkbox-buttons_position{
-    margin-bottom: 17px;
-}
 .review {
     display: flex;
     & img {
@@ -484,13 +475,16 @@
     }
 }
 .button-position {
-    margin: 0 23px 30px 1px;
+    margin: 0 18px 30px 1px;
 }
 .button-position_sec {
     margin: 0 18px 30px 0px;
 }
-.button-position_th {
+.mb20 {
     margin-right: 20px;
+}
+.mb15 {
+    margin-bottom: 15px;
 }
 .button-click {
     font-weight: 700;
@@ -512,7 +506,6 @@
     border-radius: 22px;
     opacity: 0.5;
     padding: 14px 21px 15px 19px;
-    cursor:not-allowed;
 }
 .button-click-sec {
     font-weight: 700;
@@ -523,7 +516,7 @@
     border: 2px solid #BC9CFF;
     border-radius: 22px;
     background: #ffffff;
-    padding: 14px 20px 15px;
+    padding: 13px 18px 12px;
 }
 .button-click-sec_active {
     font-weight: 700;
@@ -535,8 +528,7 @@
     border-radius: 22px;
     background: #ffffff;
     opacity: 0.5;
-    padding: 14px 20px 15px;
-    cursor:not-allowed;
+    padding: 13px 18px 12px;
 }
 .button-click_th {
     font-weight: 700;
@@ -547,7 +539,6 @@
     background:#ffffff;
 }
 .button-click_th_active {
-    cursor:not-allowed;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -606,35 +597,36 @@
         background: rgba(31, 32, 65, 0.25);
     }
 }
-.position-mb10 {
+.mb10 {
     margin-bottom: 10px;
 }
-.position-mb17 {
+.mb17 {
     margin-bottom: 17px;
 }
-.position-filter266 {
+.mw266 {
     max-width: 266px;
+    position: relative;
 }
-.position-filter255 {
+.mw255 {
     max-width: 255px;
 }
 .mw320 {
     max-width: 320px;
 }
-.position-filter150 {
+.mw150 {
     max-width: 150px;
 }
-.position-mr20{
-    margin-right: 20px;
+.mr10 {
+    margin-right: 10px;
 }
-.position-mr14 {
+.mr14 {
     margin-right: 14px;
 }
-.position-input-area{
+.position-input_small {
     width: 266px;
     padding: 13px 40px 13px 15px;
 }
-.position-input-large-area {
+.position-input_large {
     width: 320px;
     padding: 13px 30px 13px 15px;
 }

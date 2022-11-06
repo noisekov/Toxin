@@ -1,13 +1,13 @@
 .area__toggle {
     & .switch:checked,
-     .switch:not(:checked){
+    .switch:not(:checked){
         position: absolute;
         opacity: 0;
         visibility: hidden;
         z-index: -1;
     }
     & .switch:checked + label,
-     .switch:not(:checked) + label{
+    .switch:not(:checked) + label{
         position: relative;
         display: inline-block;
         padding-left: 50px;

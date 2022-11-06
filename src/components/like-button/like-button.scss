@@ -3,11 +3,11 @@
 }
 .like:checked,
     .like:not(:checked){
-       position: absolute;
-       opacity: 0;
-       visibility: hidden;
-       z-index: -1;
-   }
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+}
 .like:checked + label{
         position: relative;
         padding-left: 22px;
@@ -19,7 +19,7 @@
         height: 20px;
         color: #BC9CFF;
         border-radius: 10px;
-    }
+}
 .like:not(:checked) + label{
         position: relative;
         display: inline-block;
@@ -29,18 +29,18 @@
         line-height: 20px;
         border-radius: 10px;
         cursor: pointer;
-   }
+}
 .like:not(:checked) + label::before{
-       content: "";
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 40px;
-       height: 20px;
-       border: 1px solid rgba(31, 32, 65, 0.25);
-       border-radius: 10px;
-       z-index: 2;
-   }
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+    z-index: 2;
+}
 .like:checked + label::before{    
         content: "";
         position: absolute;
@@ -54,7 +54,7 @@
         &_position-like{
             position: relative;
         }
-   }
+}
 
 .area__like-button-block {
     font-size: 10px;
@@ -64,13 +64,11 @@
     user-select: none;
 }
 .material-icons_like {
-    // top: 5px;
     left: 5px;
     font-size: 10px;
     z-index: 1;
 }
 .material-icons_like-color {
-    // top: 5px;
     left: 5px;
     font-size: 10px;
     z-index: 1;

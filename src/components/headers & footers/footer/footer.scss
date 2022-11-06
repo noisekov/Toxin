@@ -3,21 +3,22 @@
     line-height: calc(17 / 14 * 100%);
     background-color: #ffffff;
     flex: 0 0 auto;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 73px;
+        left: 0;
+        box-shadow: 0px 1px 0px rgb(31 32 65 / 10%);
+        height: 1px;
+        width: 100%;
+    }
 }
 .footer-up {
     padding: 100px 0;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        top: 360px;
-        left: -140px;
-        background:  rgba(31, 32, 65, 0.1);
-        height: 1px;
-        width: 1440px;
-    }
 }
 .footer-up__title {
     font-weight: 700 ;
@@ -32,7 +33,7 @@
 .footer-up__item { 
     display: flex;
     flex-direction: column;
-    flex: 0 1 260px;
+    flex: 0 1 245px;
 }
 .footer-up__input {
     width: 100%;
@@ -41,10 +42,19 @@
     padding: 8px 15px;
 }
 .footer-up__arrow {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background: inherit;
+    width: 24px;
+    height: 24px;
 }
-.footer-up__logo {
+.mb20 {
     margin-bottom: 20px;
+}
+.footer-up__button {
+    position: relative;
 }
 .footer-up__text {
     line-height: calc(24 / 14 * 100%);
@@ -63,26 +73,17 @@
 }
 .footer-up__nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 4px;
     & a {
         color: $darkshade5;
     }
 }
 .footer-up__nav ul {
-    &:first-child {
-        flex: 0 1 160px;
-    } 
-    &:nth-child(2){
-        flex: 0 1 150px;
-    }
-    &:last-child{
-        flex: 0 1 150px;
-    } 
+    flex: 0 1 200px;
 }
 .footer-up__nav li {
     margin-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     &:last-child{
         margin-bottom: 0;
     }
@@ -97,7 +98,7 @@
     color: $darkshade75;
 }
 .footer-down__icon {
-    margin-right: 20px;
+    margin-right: 22px;
     &:last-child {
         margin-right: 0;
     }
@@ -117,9 +118,6 @@
     .footer-up__block{
         margin-right: 0;
         align-items: center;
-    }
-    .footer-up::after{
-        display: none;
     }
     .footer-up__text {
         display: none;

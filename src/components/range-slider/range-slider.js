@@ -16,7 +16,7 @@ if (slider) {
     document.querySelector(".js-value-lower"),
     document.querySelector(".js-value-upper")
     ]
-    slider.noUiSlider.on("update", function(values, handle){
-    valueNoSlider[handle].innerHTML = Math.round(values[handle]);
+    slider.noUiSlider.on("update", function(values, handle) {
+        valueNoSlider[handle].innerHTML = Math.round(values[handle]);
     })
 }

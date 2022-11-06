@@ -14,7 +14,7 @@ include ../field/field.pug
             .form-elements__masked-text-field
                 fieldset.area__header.area__name
                     legend Masked text field
-                input.area__masked-text-field.position-input-large-area(
+                input.area__masked-text-field.position-input_large(
                     type="text" 
                     placeholder="дд.мм.гг" 
                     ) 
@@ -24,7 +24,7 @@ include ../field/field.pug
                         label.area__header.area__name(for="cal-two-input") Date dropdown
                         .area__body
                             span.material-icons expand_more
-                            input#cal-two-input.area__input-date-dropdown.position-filter150.js-value1(
+                            input#cal-two-input.area__input-date-dropdown.mw150.js-value1(
                                 type="text" 
                                 placeholder="дд.мм.гг" 
                                 autocomplete="off"
@@ -33,39 +33,40 @@ include ../field/field.pug
                         label.area__header.area__name(for="cal-two-input") Date dropdown
                         .area__body
                             span.material-icons expand_more
-                            input.area__input-date-dropdown.position-filter150.js-value2(
+                            input.area__input-date-dropdown.mw150.js-value2(
                                 type="text" 
                                 placeholder="19.08.2019" 
                                 autocomplete="off"
                                 )
             .form-elements__filter-date-dropdown
-                .position-filter266
+                .mw266
                     label.area__header.area__name(for="one-picker") Filter date dropdown
                     .area__body
                         span.material-icons expand_more
-                        input#one-picker.area__input-filter-date-dropdown.position-input-area(
+                        input#one-picker.area__input-filter-date-dropdown.position-input_small(
                             type="text" 
                             placeholder="19 авг - 23 авг" 
                             autocomplete="off"
                         )
             .form-elements__button
-                label.area__header.area__name(for="before") Subscription text field
-                input.footer-up__input.position-input-area(
+                fieldset.mw266
+                    legend.area__name.area__header  Subscription text field
+                    input.footer-up__input.position-input_small(
                     type="text" 
                     placeholder="Email" 
                     )
-                button(type="submit").footer-up__arrow
-                    span.material-icons.material-icons_arrow arrow_forward  
+                    button(type="submit").footer-up__arrow
+                        span.material-icons.material-icons_arrow arrow_forward  
             .form-elements__dropdown-default
                 include ../dropdown-default/dropdown-default.pug
             .form-elements__dropdown-expanded
-                .position-filter266
+                .mw266
                     .area__header
                         label.area__name(for="expanded") Dropdown
                         label.area__name-fn Expanded
                     .area__body
                         span.material-icons expand_more
-                        input#expanded.area__input-dropdown-default.position-input-area(
+                        input#expanded.area__input-dropdown-default.position-input_small(
                             type="text"
                             placeholder="2 спальни, 2 кровати..."
                             autocomplete="off"
@@ -94,8 +95,8 @@ include ../field/field.pug
             .form-elements__expandable-checkbox
                 include ../expandable-checkbox/expandable-checkbox.pug
             .form-elements__expandable-checkbox-list
-                .position-filter266.mb104
-                    .area__body.position-mb17
+                .mw266.mb104
+                    .area__body.mb17
                         label.area__name-expandable(for="Expandable checkbox") Expandable checkbox list
                         span.material-icons expand_less
                     ul.area__expandable-checkbox-list
@@ -119,7 +120,7 @@ include ../field/field.pug
                             label(for="dch6") Шампунь 
         .form-elements_middle 
             .form-elements__checkbox-buttons
-                .area__body.checkbox-buttons_position
+                .area__body.mb15
                     label.area__name(for="checkbox-buttons") Checkbox Buttons
                 ul.area__expandable-checkbox-list
                     li  
@@ -132,7 +133,7 @@ include ../field/field.pug
                         input#cb3(type="checkbox" checked)
                         label(for="cb3") Можно пригласить гостей <br> (до 10 человек)
             .form-elements__radio-buttons
-                .area__body.checkbox-buttons_position
+                .area__body.mb15
                     label.area__name(for="radio-buttons") Radio Buttons
                 ul.area__radio-buttons
                     li 
@@ -152,7 +153,7 @@ include ../field/field.pug
                     label.area__header.area__name Dropdown 
                     .area__body
                         span.material-icons expand_more
-                        input.area__input-dropdown-default.position-input-large-area(
+                        input.area__input-dropdown-default.position-input_large(
                             type="text"
                             placeholder="Сколько гостей"
                             autocomplete='off'
@@ -181,8 +182,8 @@ include ../field/field.pug
                         .area__button
                             button Применить
             .form-elements__rich-checkbox-buttons
-                .position-filter266
-                    .area__body.position-filter.position-mb10
+                .mw266
+                    .area__body.position-filter.mb10
                         label.area__name(for="Rich checkbox buttons") Rich checkbox buttons
                     ul.area__expandable-checkbox-list
                         li  
@@ -196,16 +197,15 @@ include ../field/field.pug
         .form-elements_right
             .form-elements__range-slider
                 include ../range-slider/range-slider.pug
-            .form-elements__buttons
-                .position-filter266 
-                    .area__header.range-slider_position
-                        label.area__name(for="button-click") Buttons
+            .form-elements__buttons.mb11
+                .mw266
+                    legend.area__name.area__header.mb15 Buttons
                     .button
                         button.button-click.button-position click me
                         button.button-click_active click me
                         button.button-click-sec.button-position_sec click me
                         button.button-click-sec_active click me
-                        button.button-click_th.button-position_th click me
+                        button.button-click_th.mb20 click me
                         button.button-click_th_active click me
             .form-elements__button-pay 
                 .button-pay
@@ -218,7 +218,7 @@ include ../field/field.pug
                     label.area__header.area__name Dropdown 
                     .area__body
                         span.material-icons expand_more
-                        input.area__input-dropdown-default.position-input-large-area(
+                        input.area__input-dropdown-default.position-input_large(
                             type="text"
                             placeholder="3 гостя"
                             autocomplete='off'
@@ -247,7 +247,7 @@ include ../field/field.pug
                         .area__button
                             button Применить
                             button Очистить
-            .position-filter255
+            .mw255
                 label.area__header.area__name(for="bullet-list") Bullet list 
                 .area__body.bullet-list
                     ul 
@@ -275,7 +275,7 @@ include ../field/field.pug
                     span  5 дней назад
             .review__body
                 div
-                    .area__like-button-block.position-mr14
+                    .area__like-button-block.mr14
                         span.material-icons.material-icons_like.material-icons_like-color favorite
                         input#lb3.like(
                             type="checkbox"
