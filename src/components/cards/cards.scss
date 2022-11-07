@@ -1,11 +1,13 @@
 @import '../find-number/find-number.scss';
 @import '../registration/registration.scss';
 @import '../appartment/appartment.scss';
-.cards__container{
+.cards__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #F4F4F6;
-    padding: 7px 179px 141px 178px;
+    background-color: #f4f4f6;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 140px 140px;
 }
 .cards__container_left {
     margin-right: 40px;

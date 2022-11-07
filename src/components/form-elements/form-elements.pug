@@ -6,18 +6,13 @@ include ../field/field.pug
     .form-elements__container
         .form-elements_left
             .form-elements__text-field
-                +field(class="area__input")
+                +field('This is pretty awesome', 'Hover / Focus ')(class="area__input")
             .form-elements__text-field
                 +field('This is pretty awesome', 'Hover / Focus ')(class="area__input_active")
             .form-elements__dropdown-guest
                 include ../dropdown-guest/dropdown-guest.pug
             .form-elements__masked-text-field
-                fieldset.area__header.area__name
-                    legend Masked text field
-                input.area__masked-text-field.position-input_large(
-                    type="text" 
-                    placeholder="дд.мм.гг" 
-                    ) 
+                +field('ДД.ММ.ГГ' ,'', 'Masked text field')(class="area__masked-text-field")
             .form-elements__date-dropdown
                 .date
                     .date-dropdown

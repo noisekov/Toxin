@@ -1,7 +1,7 @@
-mixin field(plhold= "Email", nameFr="Default")
+mixin field(plhold= "Email", nameFr="Default", text='Text field ')
     .mw320
         fieldset.area__header
-            legend.area__name Text field 
+            legend.area__name=text
             span.area__name-fn=nameFr 
         input(class!=attributes.class).position-input_large(
             type="text"
