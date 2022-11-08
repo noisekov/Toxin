@@ -6,9 +6,9 @@ include ../field/field.pug
     .form-elements__container
         .form-elements_left
             .form-elements__text-field
-                +field('This is pretty awesome', 'Hover / Focus ')(class="area__input")
+                +field('Email', 'Default')(class="area__input")
             .form-elements__text-field
-                +field('This is pretty awesome', 'Hover / Focus ')(class="area__input_active")
+                +field('This is pretty awesome', 'Hover / Focus')(class="area__input_active")
             .form-elements__dropdown-guest
                 include ../dropdown-guest/dropdown-guest.pug
             .form-elements__masked-text-field
@@ -155,7 +155,7 @@ include ../field/field.pug
                             )
                     .area__block-list
                         .area__list
-                            .area__list-dropdown.iqdropdown
+                            .area__list-dropdown
                                 ul 
                                     li Взрослые
                                     li Дети
@@ -192,7 +192,7 @@ include ../field/field.pug
         .form-elements_right
             .form-elements__range-slider
                 include ../range-slider/range-slider.pug
-            .form-elements__buttons.mb11
+            .form-elements__buttons
                 .mw266
                     legend.area__name.area__header.mb15 Buttons
                     .button
@@ -200,7 +200,7 @@ include ../field/field.pug
                         button.button-click_active click me
                         button.button-click-sec.button-position_sec click me
                         button.button-click-sec_active click me
-                        button.button-click_th.mb20 click me
+                        button.button-click_th.mr20  click me
                         button.button-click_th_active click me
             .form-elements__button-pay 
                 .button-pay
