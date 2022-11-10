@@ -3,13 +3,14 @@ const dropdown = document.querySelectorAll(".dropdown");
 const iconRotate = document.querySelectorAll(".js-icon-rotate")
 const drop = document.querySelectorAll(".js-input-guest")
 const styleField = document.querySelectorAll(".area__input-guest")
-const dropBtn = document.querySelectorAll(".js-hidden-drop")
+const dropBtn = document.querySelectorAll(".js-btn-accept")
+const clearBtn = document.querySelector(".js-btn-clear")
 
 //скрывает блок при нажатии на кнопку принять
 dropBtn.forEach(btnDrop => {
    btnDrop.addEventListener('click', (evt) => {
       evt.preventDefault()
-      if(evt.target.closest('.js-hidden-drop')) {
+      if(evt.target.closest('.js-btn-accept')) {
          dropdown.forEach(item => {
             item.classList.remove(".show");
             })
@@ -23,6 +24,15 @@ dropBtn.forEach(btnDrop => {
    })
 })
 
+//clear btn
+clearBtn.addEventListener('click', function(evt) {
+   evt.preventDefault()
+   if(evt.target.closest('.js-btn-clear')) {
+      countValue.innerHTML = 0;
+      countValueChild.innerHTML = 0;
+      textInput.value = 0;
+   }
+})
 
 if (drop.length >= 1){
    drop.forEach((btn, i) => {
@@ -70,6 +80,7 @@ if (drop.length >= 1){
       if (parseInt(countValue.innerHTML)- 1 >= 0){
          count = parseInt(countValue.innerHTML) - 1;
          countValue.innerHTML = count;
+         clearBtn.classList.add('show');
          if (count + coun == 1) {
             textInput.value = count + coun + ' Гость'
          } else {
@@ -77,10 +88,12 @@ if (drop.length >= 1){
          }
          
       } else {
-         textInput.value = ""
+         textInput.value = "";
+         clearBtn.classList.remove('show');
       }
-      if (count + coun === 0){
-         textInput.value = ""
+      if (count + coun === 0) {
+         textInput.value = "";
+         clearBtn.classList.remove('show');
       }
       
    })
@@ -88,13 +101,15 @@ if (drop.length >= 1){
       e.preventDefault();
       count = parseInt(countValue.innerHTML) + 1;
       countValue.innerHTML = count;
+      clearBtn.classList.add('show');
       if (count + coun == 1) {
-         textInput.value = count + coun + ' Гость'
+         textInput.value = count + coun + ' Гость';
       } else {
-         textInput.value = count + coun + ' Гостя'
+         textInput.value = count + coun + ' Гостя';
       }
-      if (coun + count === 0){
-         textInput.value = ""
+      if (coun + count === 0) {
+         textInput.value = "";
+         clearBtn.classList.remove('show');
       }
    })
    //----------------
@@ -108,29 +123,34 @@ if (drop.length >= 1){
       if (parseInt(countValueChild.innerHTML)- 1 >= 0){
          coun = parseInt(countValueChild.innerHTML) - 1;
          countValueChild.innerHTML = coun;
+         clearBtn.classList.add('show');
          if (coun + count == 1) {
-            textInput.value = coun + count + ' Гость'
+            textInput.value = coun + count + ' Гость';
          } else {
-            textInput.value = coun + count + ' Гостя'
+            textInput.value = coun + count + ' Гостя';
          }
       } else {
-         textInput.value = ""
+         textInput.value = "";
+         clearBtn.classList.remove('show');
       }  
       if (coun + count === 0) {
-         textInput.value = ""
+         textInput.value = "";
+         clearBtn.classList.remove('show');
       }
    })
    btnPlusChild.addEventListener('click', function (e){
       e.preventDefault();
       coun = parseInt(countValueChild.innerHTML) + 1;
       countValueChild.innerHTML = coun;
+      clearBtn.classList.add('show');
       if (coun + count == 1) {
          textInput.value = coun + count + ' Гость'
       } else {
          textInput.value = coun + count + ' Гостя'
       }
-      if (coun + count === 0){
-         textInput.value = ""
+      if (coun + count === 0) {
+         textInput.value = "";
+         clearBtn.classList.remove('show');
       }
    })
    //-----------

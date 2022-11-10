@@ -59,3 +59,9 @@
         opacity: 0.38;
     }
 }
+.js-btn-clear {
+    display: none;
+}
+.js-btn-clear.show {
+    display: block;
+}
