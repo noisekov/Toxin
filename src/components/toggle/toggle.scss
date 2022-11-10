@@ -21,7 +21,7 @@
         left: 0;
         width: 40px;
         height: 20px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $darkshade25;
         border-radius: 10px;
     }
     & .switch:checked + label::before{    
@@ -41,7 +41,7 @@
         left: 3px;
         width: 14px;
         height: 14px;
-        background-color:  rgba(31, 32, 65, 0.25);
+        background-color:  $darkshade25;
         border-radius:100%;
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;

@@ -1,33 +1,31 @@
 .area__input-guest {
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
     border-radius: 4px;
     cursor: pointer;
 }
-.area__input-guest.\.active-guest {
-    border: 1px solid rgba(31, 32, 65, 0.25);
+.area__input-guest.\.show {
     border-radius: 4px 4px 0 0;
-    cursor: pointer;
 }
-.area__block-list-hidden {
+.dropdown {
     display: none;
-    flex-direction: column;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 0 0 4px 4px;
-}
-.area__block-list-hidden.\.active-guest{
-    display: flex;
     position: absolute;
-    width: 320px;
     background: #ffffff;
     z-index: 3;
+    width: 320px;
+    flex-direction: column;
+    border: 1px solid $darkshade25;
+    border-radius: 0 0 4px 4px;
+}
+.dropdown.\.show {
+    display: flex;
 }
 .area__block-list {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
     border-radius: 0 0 4px 4px;
 }
-.area__list {
+.dropdown__block {
     display: flex;
     justify-content: space-between;
 }
@@ -36,7 +34,7 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1F2041;
+    color: $darkshade;
 }
 .area__list-btn_col {
     display: flex;
@@ -46,17 +44,17 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1F2041;
+    color: $darkshade;
     margin: 7px;
     width:92px;
 }
 .area__list-btn_col button {
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
     border-radius: 50%;
     background-color: #fff;
-    color: rgba(31, 32, 65, 0.5);
+    color: $darkshade5;
     &:hover {
         opacity: 0.38;
     }

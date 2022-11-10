@@ -10,7 +10,7 @@ include ../field/field.pug
             .form-elements__text-field
                 +field('This is pretty awesome', 'Hover / Focus')(class="area__input_active")
             .form-elements__dropdown-guest
-                include ../dropdown-guest/dropdown-guest.pug
+                include ../dropdown/dropdown.pug
             .form-elements__masked-text-field
                 +field('ДД.ММ.ГГ' ,'', 'Masked text field')(class="area__masked-text-field")
             .form-elements__date-dropdown
@@ -67,7 +67,7 @@ include ../field/field.pug
                             autocomplete="off"
                             )
                     .area__block-list
-                        .area__list
+                        .dropdown__block
                             .area__list-dropdown
                                 ul 
                                     li Спальни
@@ -154,7 +154,7 @@ include ../field/field.pug
                             autocomplete='off'
                             )
                     .area__block-list
-                        .area__list
+                        .dropdown__block
                             .area__list-dropdown
                                 ul 
                                     li Взрослые
@@ -219,7 +219,7 @@ include ../field/field.pug
                             autocomplete='off'
                             )
                     .area__block-list  
-                        .area__list
+                        .dropdown__block
                             .area__list-dropdown
                                 ul 
                                     li Взрослые

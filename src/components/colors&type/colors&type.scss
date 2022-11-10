@@ -128,7 +128,7 @@ h3 {
 
 }
 .block-title span {
-    color: rgba(31, 32, 65, 0.25);
+    color: $darkshade25;
     width: 30px;
     height: 30px;
     text-align: right;
@@ -136,6 +136,6 @@ h3 {
 }
 .block-title p {
     line-height: calc(24 / 14 * 100%);
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
     flex: 0 1 310px;
 }

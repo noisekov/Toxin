@@ -1,0 +1,37 @@
+.mw320
+    fieldset.area__header
+        legend.area__name Dropdown
+    .area__body.js-input-guest
+        span.material-icons.js-icon-rotate expand_more
+        input.area__input-guest.position-input_large(
+            type="text" 
+            placeholder="Сколько гостей"
+            autocomplete="off"
+            )
+    .dropdown
+        .dropdown__block
+            .area__list-dropdown
+                ul 
+                    li Взрослые
+                    li Дети
+                    li Младенцы
+            .area__list-btn  
+                ul  
+                    li.area__list-btn_col
+                        button.btnMinus -
+                        span.countValue 0
+                        button.btnPlus +
+                    li.area__list-btn_col
+                        button.btnMinusChild -
+                        span.countValueChild 0
+                        button.btnPlusChild +
+                    li.area__list-btn_col
+                        button -
+                        span 0
+                        button +
+        .area__button
+            button.js-hidden-drop Применить
+
+
+
+

@@ -12,7 +12,7 @@
 @import "../components/range-slider/range-slider.scss";
 @import "../components/toggle/toggle.scss";
 @import "../components/like-button/like-button.scss";
-@import "../components/dropdown-guest/dropdown-guest.scss";
+@import "../components/dropdown/dropdown.scss";
 @import "../components/dropdown-default/dropdown-default.scss";
 @import "../components/expandable-checkbox/expandable-checkbox.scss";
 @import "../components/rate-button/rate-button.scss";
@@ -69,14 +69,14 @@ body {
 	font-size: 20px;
 	margin-bottom: 20px;
 	text-decoration: underline;
-	color: #BC9CFF;
+	color: $purple;
 	text-transform: uppercase;
 	font-weight: 700;
 	display: inline-block;
-	border: 3px solid #BC9CFF;
+	border: 3px solid $purple;
 	&:hover {
 		color: #FFFFFF;
-		background-color: #BC9CFF;
+		background-color: $purple;
 	}
 }
 .mb40 {

@@ -1,6 +1,6 @@
 .area__input-dropdown-default {
-    color:  rgba(31, 32, 65, 0.75);
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    color:  $darkshade75;
+    border: 1px solid $darkshade25;
     border-radius: 4px 4px 0 0;
     cursor: pointer;
 }
@@ -14,6 +14,6 @@
     background: #ffffff;
     width: 266px;
     flex-direction: column;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
     border-radius: 0 0 4px 4px;
 }

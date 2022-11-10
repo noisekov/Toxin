@@ -4,7 +4,7 @@
 .pagination__body {
     font-size: 12px;
     line-height: 40px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $darkshade5;
     margin-bottom: 9px;
     display: flex;
     align-items: center;
@@ -25,13 +25,13 @@
         display: none;
         position: relative;
         border-radius: 22px;
-        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
         top: -4px;
     }
     &:last-child {
         position: relative;
         padding-top: 10px;
-        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
         border-radius: 22px;
     }
 }
@@ -43,12 +43,12 @@
     text-align: center;
     width: 40px;
     height: 40px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
     border-radius: 22px;
 }
 .pagination__count {
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
     margin-left: 4px;
 }
 .mb16 {

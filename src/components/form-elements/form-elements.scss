@@ -87,7 +87,7 @@
 .area__radio-buttons {
     display: flex;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $darkshade5;
     & li {
         margin-right: 20px;
     }
@@ -114,7 +114,7 @@
         left: 0;
         width: 20px;
         height: 20px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $darkshade25;
         border-radius: 100%
     }
     & input[type="radio"]:checked + label::after,
@@ -140,8 +140,8 @@
     }
 }
 .area__input-filter-date-dropdown {
-    color:  rgba(31, 32, 65, 0.75);
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    color:  $darkshade75;
+    border: 1px solid $darkshade25;
     border-radius: 4px;
     line-height: 18px;
 }
@@ -152,7 +152,7 @@
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
-        color: #BC9CFF;
+        color: $purple;
         cursor: pointer;
         padding: 7px 13px;
     }
@@ -200,7 +200,7 @@
         left: 0;
         width: 20px;
         height: 20px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $darkshade25;
         border-radius: 4px;
     }
     & input[type="checkbox"]:checked + label::before{    
@@ -242,7 +242,7 @@
 }
 .area__expandable-checkbox-list li {
     line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $darkshade5;
     margin: 0 0 8px 0px;
     &:first-child {
         margin-top: 5px;
@@ -254,19 +254,19 @@
 .area__expandable-checkbox-list span {
     font-weight: 700;
     line-height: 18px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
 }
 .area__expandable-checkbox-list p {
     font-size: 12px;
     line-height: 14px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $darkshade5;
 }
 .area__name {
     font-weight: 700;
     font-size: 12px;
     line-height: calc(15 / 12 * 100%);
     text-transform: uppercase;
-    color: #1F2041;
+    color: $darkshade;
 }
 .area__name-fn {
     position: absolute;
@@ -275,7 +275,7 @@
     text-transform: uppercase;
     font-size: 12px;
     line-height: 15px;
-    color: rgba(31, 32, 65, 0.5);  
+    color: $darkshade5;  
 }
 .area__body {
     position: relative; 
@@ -283,8 +283,8 @@
 .area__input-date-dropdown {
     position: relative;
     padding: 13px 30px 13px 15px;
-    color:  rgba(31, 32, 65, 0.75);
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    color:  $darkshade75;
+    border: 1px solid $darkshade25;
     border-radius: 4px;
     line-height: 18px;
     text-transform: uppercase;
@@ -292,35 +292,35 @@
             position: absolute;
             top: 8px;
             right: 5px;
-            color: rgba(31, 32, 65, 0.5);
+            color: $darkshade5;
         }    
 }
 //text-field
 .area__masked-text-field {
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
     border-radius: 4px;
     &::-webkit-input-placeholder {
-        color: rgba(31, 32, 65, 0.25);
+        color: $darkshade25;
         text-transform: uppercase;
     }
     &:-moz-placeholder {
-        color: rgba(31, 32, 65, 0.25);
+        color: $darkshade25;
         text-transform: uppercase;  
     }
     &:hover{
         &::-webkit-input-placeholder {
-            color: rgba(31, 32, 65, 0.75);
+            color: $darkshade75;
         }
         &:-moz-placeholder {
-            color: rgba(31, 32, 65, 0.75);
+            color: $darkshade75;
         }
     }
     &:focus{
         &::-webkit-input-placeholder {
-            color: rgba(31, 32, 65, 0.75);
+            color: $darkshade75;
         }
         &:-moz-placeholder {
-            color: rgba(31, 32, 65, 0.75);
+            color: $darkshade75;
         } 
     }
 }
@@ -329,39 +329,39 @@
     position: relative;
 }
 .area__input {
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
     border-radius: 4px;
     &::-webkit-input-placeholder {
-        color: rgba(31, 32, 65, 0.25);
+        color: $darkshade25;
     }
     &:-moz-placeholder {
-        color: rgba(31, 32, 65, 0.25);
+        color: $darkshade25;
     }
     &:hover{
         &::-webkit-input-placeholder {
-            color: rgba(31, 32, 65, 0.75);
+            color: $darkshade75;
         }
         &:-moz-placeholder {
-            color: rgba(31, 32, 65, 0.75);
+            color: $darkshade75;
         }
     }
     &:focus{
         &::-webkit-input-placeholder {
-            color: rgba(31, 32, 65, 0.75);
+            color: $darkshade75;
         }
         &:-moz-placeholder {
-            color: rgba(31, 32, 65, 0.75);
+            color: $darkshade75;
         } 
     }
 }
 .area__input_active {
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    border: 1px solid $darkshade5;
     border-radius: 4px; 
     &::-webkit-input-placeholder {
-        color: rgba(31, 32, 65, 0.75);
+        color: $darkshade75;
     }
     &:-moz-placeholder {
-        color: rgba(31, 32, 65, 0.75);
+        color: $darkshade75;
     }
 }
 .date { 
@@ -378,7 +378,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $darkshade5;
     z-index: 1;
     cursor: pointer;
     &:hover {
@@ -386,7 +386,7 @@
     }
 }
 .material-icons_purpure {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -430,13 +430,13 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $darkshade75;
     }
     & p:last-child {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $darkshade75;
     }
     &::after {
         content:"";
@@ -459,7 +459,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
     & p {
         font-weight: 700;
     }
@@ -471,7 +471,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $darkshade75;
     }
 }
 .button-position {
@@ -492,7 +492,7 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
     border-radius: 22px;
     padding: 14px 21px 15px 19px;
 }
@@ -502,7 +502,7 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
     border-radius: 22px;
     opacity: 0.5;
     padding: 14px 21px 15px 19px;
@@ -512,8 +512,8 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #BC9CFF;
-    border: 2px solid #BC9CFF;
+    color: $purple;
+    border: 2px solid $purple;
     border-radius: 22px;
     background: #ffffff;
     padding: 13px 18px 12px;
@@ -523,8 +523,8 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #BC9CFF;
-    border: 2px solid #BC9CFF;
+    color: $purple;
+    border: 2px solid $purple;
     border-radius: 22px;
     background: #ffffff;
     opacity: 0.5;
@@ -535,7 +535,7 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #BC9CFF;
+    color: $purple;
     background:#ffffff;
 }
 .button-click_th_active {
@@ -543,13 +543,13 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
+    color: $darkshade5;
     background:#ffffff;
 }
 .button-pay {
     max-width: 320px;
     & button {
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
         border-radius: 22px;
         font-weight: 700;
         font-size: 12px;
@@ -564,7 +564,7 @@
 .button-pay__link {
     display: block;
     position: relative;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
     border-radius: 22px;
     font-weight: 700;
     font-size: 12px;
@@ -581,7 +581,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
 }
 .bullet-list li {
     margin:0 0 0 21px;
@@ -594,7 +594,7 @@
         top: 7px;
         right: 245px;
         border-radius: 100%;
-        background: rgba(31, 32, 65, 0.25);
+        background: $darkshade25;
     }
 }
 .mb10 {
