@@ -4,7 +4,7 @@ const iconRotate = document.querySelectorAll(".js-icon-rotate")
 const drop = document.querySelectorAll(".js-input-guest")
 const styleField = document.querySelectorAll(".area__input-guest")
 const dropBtn = document.querySelectorAll(".js-btn-accept")
-const clearBtn = document.querySelector(".js-btn-clear")
+
 
 //скрывает блок при нажатии на кнопку принять
 dropBtn.forEach(btnDrop => {
@@ -24,16 +24,6 @@ dropBtn.forEach(btnDrop => {
    })
 })
 
-//clear btn
-clearBtn.addEventListener('click', function(evt) {
-   evt.preventDefault()
-   if(evt.target.closest('.js-btn-clear')) {
-      countValue.innerHTML = 0;
-      countValueChild.innerHTML = 0;
-      textInput.value = 0;
-   }
-})
-
 if (drop.length >= 1){
    drop.forEach((btn, i) => {
       btn.addEventListener("click",function () {
@@ -48,7 +38,16 @@ if (drop.length >= 1){
       })
    })
 
+//clear btn
+const clearBtn = document.querySelector(".js-btn-clear")
 
+clearBtn.addEventListener('click', (evt) => {
+   evt.preventDefault()
+   countValue.innerHTML = 0;
+   countValueChild.innerHTML = 0;
+   textInput.value = '';
+   clearBtn.classList.remove('show')
+})
 
    // if keydown ESC dropdown OFF
    document.addEventListener("keydown" , function (e){
@@ -155,6 +154,5 @@ if (drop.length >= 1){
    })
    //-----------
 }
-
 
 
