@@ -46,13 +46,36 @@
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
 .air-datepicker-cell.-current-.-focus- {
-	color: var(--adp-color)
+	color: var(--adp-color);
+}
+.air-datepicker-cell.-focus-.-in-range- {
+	border-radius: 22px;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: var(--adp-cell-background-color-in-range);
+	}
 }
 .air-datepicker-cell.-current-.-in-range- {
 	color: #ffffff;
     border-radius: 22px;
     font-weight: 700;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: var(--adp-cell-background-color-in-range);
+	}
 }
 .air-datepicker-cell.-disabled- {
 	cursor: default;
@@ -82,7 +105,7 @@
 .air-datepicker-cell.-range-to- {
 	border: 1px solid var(--adp-cell-border-color-in-range);
 	background-color: var(--adp-cell-background-color-in-range);
-	border-radius: 22px var(--adp-cell-border-radius) var(--adp-cell-border-radius) 22px
+	border-radius: 22px var(--adp-cell-border-radius) var(--adp-cell-border-radius) 22px;
 }
 .air-datepicker-cell.-range-to-.-range-from- {
 	border-radius: var(--adp-cell-border-radius)
@@ -92,7 +115,32 @@
 	border: none;
     font-weight: 700;
 	background: var(--adp-cell-background-color-selected);
-
+}
+.air-datepicker-cell.-selected-.-range-from- {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 22px 0 0 22px;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: var(--adp-cell-background-color-in-range);
+	}
+}
+.air-datepicker-cell.-selected-.-range-to- {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 0 22px 22px 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: var(--adp-cell-background-color-in-range);
+	}
 }
 .air-datepicker-cell.-selected-.-current- {
 	color: #fff;
