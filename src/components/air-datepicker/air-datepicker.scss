@@ -61,6 +61,19 @@
 		background: var(--adp-cell-background-color-in-range);
 	}
 } 
+.air-datepicker-cell.-focus-.-range-from- {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 22px 0 0 22px;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: var(--adp-cell-background-color-in-range);
+	}
+} 
 .air-datepicker-cell.-focus-.-in-range- {
 	border-radius: 22px;
 	&::before {

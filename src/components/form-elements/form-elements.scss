@@ -91,23 +91,23 @@
     & li {
         margin-right: 20px;
     }
-    & input[type="radio"]:checked,
-    input[type="radio"]:not(:checked){
+    & input:checked,
+    input:not(:checked){
         position: absolute;
         opacity: 0;
         visibility: hidden;
         z-index: -1;
     }
-    & input[type="radio"]:checked + label,
-    input[type="radio"]:not(:checked) + label{
+    & input:checked + label,
+    input:not(:checked) + label{
         position: relative;
         display: inline-block;
         padding-left: 30px;
         line-height: 21px;
         cursor: pointer;
     }
-    & input[type="radio"]:not(:checked) + label::before,
-    input[type="radio"]:checked + label::before{
+    & input:not(:checked) + label::before,
+    input:checked + label::before{
         content: "";
         position: absolute;
         top: 0;
@@ -117,8 +117,8 @@
         border: 1px solid $darkshade25;
         border-radius: 100%
     }
-    & input[type="radio"]:checked + label::after,
-    input[type="radio"]:not(:checked) + label::after{
+    & input:checked + label::after,
+    input:not(:checked) + label::after{
         content: "";
         position: absolute;
         top: 4px;
@@ -132,10 +132,10 @@
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
-    & input[type="radio"]:checked + label::after {
+    & input:checked + label::after {
         opacity: 1;
     }
-    & input[type="radio"]:not(:checked) + label::after {
+    & input:not(:checked) + label::after {
         opacity: 0;
     }
 }
@@ -178,22 +178,22 @@
     }
 }
 .area__expandable-checkbox-list {
-    & input[type="checkbox"]:checked,
-    input[type="checkbox"]:not(:checked){
+    & input:checked,
+    input:not(:checked){
         position: absolute;
         opacity: 0;
         visibility: hidden;
         z-index: -1;
     }
-    & input[type="checkbox"]:checked + label,
-    input[type="checkbox"]:not(:checked) + label{
+    & input:checked + label,
+    input:not(:checked) + label{
         position: relative;
         display: inline-block;
         padding-left: 30px;
         line-height: 21px;
         cursor: pointer;
     }
-    & input[type="checkbox"]:not(:checked) + label::before{
+    & input:not(:checked) + label::before{
         content: "";
         position: absolute;
         top: 0;
@@ -203,7 +203,7 @@
         border: 1px solid $darkshade25;
         border-radius: 4px;
     }
-    & input[type="checkbox"]:checked + label::before{    
+    & input:checked + label::before{    
             content: "";
             position: absolute;
             top: 0;
@@ -213,8 +213,8 @@
             border: 1px solid #8BA4F9;
             border-radius: 4px;
     }
-    & input[type="checkbox"]:checked + label::after,
-    input[type="checkbox"]:not(:checked) + label::after{
+    & input:checked + label::after,
+    input:not(:checked) + label::after{
         content: "";
         position: absolute;
         top: 6px;
@@ -233,10 +233,10 @@
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
-    & input[type="checkbox"]:checked + label::after {
+    & input:checked + label::after {
         opacity: 1;
         }
-    & input[type="checkbox"]:not(:checked) + label::after {
+    & input:not(:checked) + label::after {
         opacity: 0;
         }
 }
