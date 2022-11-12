@@ -1,4 +1,4 @@
-const entryForm = document.querySelector(".entry form");
+const entryForm = document.querySelector(".entry");
 
 
 let isStorageSupport = true;

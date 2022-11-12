@@ -4,6 +4,7 @@ import AirDatepicker from 'air-datepicker';
 //air-datapicker
 let calInTwo, onePicker,calendarInPage;
 
+//btn apply
 let apply = {
    content: 'Применить',
    className:'Add',
@@ -11,48 +12,53 @@ let apply = {
       evt.hide()
    }
 }
+//two input Dates
+let valueDate1 = document.querySelector(".js-value1");
+let valueDate2 = document.querySelector(".js-value2");
 
-
-let valueDate1 = document.querySelector(".js-value1")
-let valueDate2 = document.querySelector(".js-value2")
-
-let date1 = new Date();
-let date2 = new Date();
-
+//btn clear
+let clearBtn = {
+   content: 'Очистить',
+   className:'clearBtn',
+   onClick: () => {
+      calInTwo.clear();
+      valueDate1.value = '';
+      valueDate2.value = '';
+   }
+}
+//show calendar when click on input
+valueDate1.addEventListener('click', () => {
+   calInTwo.show();
+})
+valueDate2.addEventListener('click', () => {
+   calInTwo.show();
+})
+//hide calendar when click document
+document.addEventListener('click', (evt) => {
+   if (!evt.target.closest('.js-value1') && !evt.target.closest('.js-value2') && !evt.target.closest('.air-datepicker')) {
+      calInTwo.hide();
+   }
+}) 
+//initialization calendar two input
 calInTwo = new AirDatepicker('#cal-two-input',{
-   // multipleDates: true,
-   selectedDates: [date1, date2],
-   onSelect ({date1}) {
-      date1 = valueDate1;
-   },
-   onSelect ({date2}) {
-      date2 = valueDate2;
+   container: ".date",
+   selectedDates: [Date],
+   onSelect ({date}) {
+      valueDate1.value = date[0].toLocaleDateString('ru');
+      valueDate2.value = date[1].toLocaleDateString('ru');
    },
    range: true,
-   buttons: ['clear', apply],   
+   buttons: [clearBtn, apply],  
 });
-
-
-calInTwo = new AirDatepicker('#cal-two-input-find-number',{
-   range: true,
-   multipleDatesSeparator: '-',
-   buttons: ['clear', apply],
-});
-calInTwo = new AirDatepicker('#cal-two-input-choice',{
-   range: true,
-   multipleDatesSeparator: '-',
-   buttons: ['clear', apply],
-});
-
-
+//initialization calendar one input
 onePicker = new AirDatepicker('#one-picker',{
    range: true,
+   dateFormat: 'dd MMM',
    multipleDatesSeparator: ' - ',
    buttons: ['clear', apply],
 });
-
+//initialization calendar on page
 calendarInPage = new AirDatepicker('#calendar',{
    buttons: ['clear', apply],
    range: true,
-   multipleDatesSeparator: '-',
 });
