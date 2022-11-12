@@ -1,11 +1,10 @@
 # Toxin
 
-```This page , analog AirBnb```
-
-```global refactoring my past project```
-
 https://noisekov.github.io/Toxin/
 
-https://www.figma.com/file/UXyOqQk55K9gnmoMWms8Ry/MetaLamp-(former-FSD)-frontend-education-program.-The-2nd-task?node-id=0%3A1
+I use in this project material icons,<br> vanilla js,<br> noUislider(js),<br> jquery.maskedinput(jq),<br> air-datepicker(js),<br> pug mixins,<br> pixel perfect.
 
-i use in this project material icons, vanilla js, noUislider(js), jquery.maskedinput(jq), air-datepicker(js), pug mixins, pixel perfect.
+
+```This page transfer and refactoring my past project on parcel https://noisekov.github.io/-metalamp-parcel-/```
+
+https://www.figma.com/file/UXyOqQk55K9gnmoMWms8Ry/MetaLamp-(former-FSD)-frontend-education-program.-The-2nd-task?node-id=0%3A1
