@@ -11,7 +11,7 @@
     left: 260px;
 }
 #slider {
-    height: 6px;
+    height: 5px;
     cursor: pointer;
 }
 .slider-styled .noUi-handle::before,
@@ -24,3 +24,16 @@
     cursor: pointer;
 }
 //--------------------//
+
+#sliderSecond .noUi-handle{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    top: -5px;
+    left: 260px;
+}
+#sliderSecond {
+    height: 5px;
+    cursor: pointer;
+}

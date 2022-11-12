@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Landing
+    body 
+        .wrapper
+            .landing-page__header
+                include ../../components/headers & footers/header/header-up.pug
+            .landing-page
+                .landing-page-block
+                    .landing-page-block__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+                .landing-page_abs
+                    include ../../components/find-number/find-number.pug
+            .landing-page__footer  
+                include ../../components/headers & footers/footer/footer.pug

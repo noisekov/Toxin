@@ -1,0 +1,144 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Search-room
+    body 
+        .wrapper 
+            .search-room__header
+                include ../../components/headers & footers/header/header-up.pug
+            .search-room
+                .container
+                    .search-room__body 
+                        .search-room__left
+                            form(action="#")
+                                .mb20
+                                    .mw266
+                                        label.area__header.area__name(for="one-picker") Даты пребывания в отеле
+                                        .area__body
+                                            span.material-icons expand_more
+                                            input#one-picker.area__input-filter-date-dropdown.position-input_small(
+                                                type="text" 
+                                                placeholder="19 авг - 23 авг" 
+                                                autocomplete="off"
+                                            )
+                                .search-room__left-big-margin
+                                    .mw266
+                                        .area__header 
+                                            p.area__name Гости
+                                        .area__body.js-input-guest
+                                            i.material-icons#js-dropdown-hidden expand_more
+                                            input.area__input-guest.position-input_small(
+                                                type="text" 
+                                                placeholder="3гостя, 1 младенец"
+                                                autocomplete="off"
+                                                )
+                                .search-room__left-big-margin
+                                    .mw266.mb20
+                                        .area__header.mb22
+                                            label.area__name(for="range-slider") Диапазон цены
+                                            .area__body-slider.area__name-fn
+                                                span.js-value-lower
+                                                span  - 
+                                                span.js-value-upper 
+                                        .slider-styled#sliderSecond
+                                    span.search-room__slider-subtitle Стоимость за сутки пребывания в номере
+                                .search-room__left-big-margin
+                                    .area__body.mb15
+                                        label.area__name(for="checkbox-buttons") Правила дома
+                                    ul.area__expandable-checkbox-list
+                                        li  
+                                            input#cb4(type="checkbox")
+                                            label(for="cb4") Можно курить
+                                        li  
+                                            input#cb5(type="checkbox" checked)
+                                            label(for="cb5") Можно с питомцами
+                                        li 
+                                            input#cb6(type="checkbox" checked)
+                                            label(for="cb6") Можно пригласить гостей <br> (до 10 человек)
+                                .search-room__left-big-margin
+                                    .mw266
+                                        .area__body.mb10
+                                            label.area__name(for="Rich checkbox buttons") Доступность
+                                        ul.area__expandable-checkbox-list
+                                            li  
+                                                input#rc3(type="checkbox")
+                                                label(for="rc3") <span>Широкий коридор</span> <br>
+                                                    p Ширина коридоров в номере не менее 91 см.
+                                            li  
+                                                input#rc4(type="checkbox")
+                                                label(for="rc4") <span>Помощник для инвалидов</span><br> 
+                                                    p На 1 этаже вас встретит специалист  и проводит до номера.
+                                .search-room__left-big-margin
+                                    .mw266
+                                        p.area__name.area__header Удобства номера
+                                        .area__body
+                                            input.area__input-dropdown-default.position-input_small.js-dropdown-expanded(
+                                                type="text"
+                                                autocomplete="off" 
+                                                placeholder="2 спальни, 2 кровати..."
+                                                )
+                                            i.material-icons.js-default-hidden.js-dropdown-expanded expand_more
+                                        .area__block-list-expanded
+                                            .area__list
+                                                .area__list-dropdown
+                                                    ul 
+                                                        li Спальни
+                                                        li Кровати
+                                                        li Ванные комнаты 
+                                                .area__list-btn
+                                                    ul
+                                                        li.area__list-btn_col
+                                                            button.js-first-elem-min -
+                                                            span.js-counter 2
+                                                            button.js-first-elem-plus +
+                                                        li.area__list-btn_col
+                                                            button.js-second-elem-min -
+                                                            span 2
+                                                            button.js-second-elem-plus +
+                                                        li.area__list-btn_col
+                                                            button.js-third-elem-min -
+                                                            span 2
+                                                            button.js-third-elem-plus +
+                                include ../../components/expandable-checkbox/expandable-checkbox.pug
+                        .search-room__right
+                            h1.search-room__title Номера, которые мы для вас подобрали
+                                .search-room__apparments 
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                                    .search-room__apparment  
+                                        include ../../components/appartment/appartment.pug
+                            .search-room__pagination
+                                .pagination
+                                    ul.pagination__body 
+                                        li.pagination__button_active 1
+                                        li.pagination__button 2
+                                        li.pagination__button 3
+                                        li.pagination__button ...
+                                        li.pagination__button 15
+                                        li.pagination__button
+                                            span.material-icons.material-icons_pagination-right arrow_forward  
+                                    .pagination__count 1 – 12 из 100+ вариантов аренды
+            include ../../components/headers & footers/footer/footer.pug

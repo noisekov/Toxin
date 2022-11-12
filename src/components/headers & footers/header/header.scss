@@ -10,7 +10,7 @@ header {
 }
 .header__nav {
     display: flex;
-    @media (max-width:900px) {
+    @media (max-width:1165px) {
         display: none;
     }
 }
@@ -86,7 +86,7 @@ header {
     height: 36px;
     cursor: pointer;
     perspective: 200px;
-    @media (max-width:900px) {
+    @media (max-width:1165px) {
         position: relative;
         opacity: 1;
         visibility: visible;

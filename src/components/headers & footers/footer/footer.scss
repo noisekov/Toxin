@@ -103,9 +103,12 @@
         margin-right: 0;
     }
 }
-@media (max-width:768px) {
+@media (max-width:992px) {
     .footer{
         padding: 120px 0;
+    }
+    .footer::after {
+        display: none;
     }
     .footer-up{
         display: flex;
