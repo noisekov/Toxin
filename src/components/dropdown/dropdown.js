@@ -24,7 +24,7 @@ dropBtn.forEach(btnDrop => {
    })
 })
 
-if (drop.length >= 1){
+if (drop.length >= 1) {
    drop.forEach((btn, i) => {
       btn.addEventListener("click",function () {
          dropdown[i].classList.toggle(".show");
@@ -38,20 +38,37 @@ if (drop.length >= 1){
       })
    })
 
-//clear btn
-const clearBtn = document.querySelector(".js-btn-clear")
+   //clear btn
+   const clearBtn = document.querySelector(".js-btn-clear")
 
-clearBtn.addEventListener('click', (evt) => {
-   evt.preventDefault()
-   countValue.innerHTML = 0;
-   countValueChild.innerHTML = 0;
-   textInput.value = '';
-   clearBtn.classList.remove('show')
-})
+   clearBtn.addEventListener('click', (evt) => {
+      evt.preventDefault()
+      countValue.innerHTML = 0;
+      countValueChild.innerHTML = 0;
+      textInput.value = '';
+      coun = 0;
+      count = 0;
+      clearBtn.classList.remove('show')
+   })
 
    // if keydown ESC dropdown OFF
    document.addEventListener("keydown" , function (e){
       if (e.key === "Tab" || e.key === "Escape"){
+         dropdown.forEach(item =>{
+            item.classList.remove(".show");
+            })
+         iconRotate.forEach(icon => {
+            icon.classList.remove(".material-icons_rotate");
+         })
+         styleField.forEach(styleField => {
+            styleField.classList.remove(".show");
+         })
+      }
+   })
+
+   // if keydown ESC dropdown OFF
+   document.addEventListener("click" , function (evt){
+      if (!evt.target.closest('.form-elements__dropdown-guest')) {
          dropdown.forEach(item =>{
             item.classList.remove(".show");
             })
@@ -73,7 +90,8 @@ clearBtn.addEventListener('click', (evt) => {
 
    const textInput = document.querySelector(".area__input-guest");
 
-   let count;
+   let count = 0;
+   let coun = 0;
    btnMinus.addEventListener('click', function (e){
       e.preventDefault();
       if (parseInt(countValue.innerHTML)- 1 >= 0){
@@ -81,16 +99,14 @@ clearBtn.addEventListener('click', (evt) => {
          countValue.innerHTML = count;
          clearBtn.classList.add('show');
          if (count + coun == 1) {
-            textInput.value = count + coun + ' Гость'
+            textInput.value = count + coun + ' Гость';
+         } else if (count + coun <= 4) {
+            textInput.value = count + coun + ' Гостя';
          } else {
-            textInput.value = count + coun + ' Гостя'
+            textInput.value = count + coun + ' Гостей';
          }
-         
-      } else {
-         textInput.value = "";
-         clearBtn.classList.remove('show');
-      }
-      if (count + coun === 0) {
+      } 
+      if (count === 0 && coun === 0) {
          textInput.value = "";
          clearBtn.classList.remove('show');
       }
@@ -103,12 +119,10 @@ clearBtn.addEventListener('click', (evt) => {
       clearBtn.classList.add('show');
       if (count + coun == 1) {
          textInput.value = count + coun + ' Гость';
-      } else {
+      } else if (count + coun <= 4) {
          textInput.value = count + coun + ' Гостя';
-      }
-      if (coun + count === 0) {
-         textInput.value = "";
-         clearBtn.classList.remove('show');
+      } else {
+         textInput.value = count + coun + ' Гостей';
       }
    })
    //----------------
@@ -116,23 +130,21 @@ clearBtn.addEventListener('click', (evt) => {
    const btnPlusChild = document.querySelector(".btnPlusChild");
    const countValueChild = document.querySelector(".countValueChild");
 
-   let coun;
    btnMinusChild.addEventListener('click', function (e){
       e.preventDefault();
       if (parseInt(countValueChild.innerHTML)- 1 >= 0){
          coun = parseInt(countValueChild.innerHTML) - 1;
          countValueChild.innerHTML = coun;
          clearBtn.classList.add('show');
-         if (coun + count == 1) {
-            textInput.value = coun + count + ' Гость';
+         if (count + coun == 1) {
+            textInput.value = count + coun + ' Гость';
+         } else if (count + coun <= 4) {
+            textInput.value = count + coun + ' Гостя';
          } else {
-            textInput.value = coun + count + ' Гостя';
+            textInput.value = count + coun + ' Гостей';
          }
-      } else {
-         textInput.value = "";
-         clearBtn.classList.remove('show');
-      }  
-      if (coun + count === 0) {
+      }   
+      if (count === 0 && coun === 0) {
          textInput.value = "";
          clearBtn.classList.remove('show');
       }
@@ -142,14 +154,14 @@ clearBtn.addEventListener('click', (evt) => {
       coun = parseInt(countValueChild.innerHTML) + 1;
       countValueChild.innerHTML = coun;
       clearBtn.classList.add('show');
-      if (coun + count == 1) {
-         textInput.value = coun + count + ' Гость'
+      console.log(count);
+      console.log(coun);
+      if (count + coun == 1) {
+         textInput.value = count + coun + ' Гость';
+      } else if (count + coun <= 4) {
+         textInput.value = count + coun + ' Гостя';
       } else {
-         textInput.value = coun + count + ' Гостя'
-      }
-      if (coun + count === 0) {
-         textInput.value = "";
-         clearBtn.classList.remove('show');
+         textInput.value = count + coun + ' Гостей';
       }
    })
    //-----------
