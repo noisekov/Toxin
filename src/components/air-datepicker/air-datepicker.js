@@ -13,8 +13,8 @@ let apply = {
    }
 }
 //two input Dates
-let valueDate1 = document.querySelector(".js-value1");
-let valueDate2 = document.querySelector(".js-value2");
+let valueDate1 = document.querySelector(".js-cal-value_left");
+let valueDate2 = document.querySelector(".js-cal-value_right");
 
 //btn clear
 let clearBtn = {
@@ -35,7 +35,9 @@ valueDate2.addEventListener('click', () => {
 })
 //hide calendar when click document
 document.addEventListener('click', (evt) => {
-   if (!evt.target.closest('.js-value1') && !evt.target.closest('.js-value2') && !evt.target.closest('.air-datepicker')) {
+   if (!evt.target.closest('.js-cal-value_left') 
+      && !evt.target.closest('.js-cal-value_right') 
+      && !evt.target.closest('.air-datepicker')) {
       calInTwo.hide();
    }
 }) 

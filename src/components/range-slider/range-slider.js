@@ -13,11 +13,11 @@ if (slider) {
         }
     });
     let valueNoSlider = [
-    document.querySelectorAll(".js-value-lower")[0],
-    document.querySelectorAll(".js-value-upper")[0]
+        document.querySelectorAll(".js-value-lower")[0],
+        document.querySelectorAll(".js-value-upper")[0]
     ]
     slider.noUiSlider.on("update", function(values, handle) {
-        valueNoSlider[handle].innerHTML = Math.round(values[handle]);
+        valueNoSlider[handle].innerHTML = Math.round(values[handle]).toLocaleString('ru-RU') + "₽";
     })
 }
 
@@ -34,10 +34,10 @@ if (sliderSecond) {
         }
     });
     let valueNoSlider = [
-    document.querySelectorAll(".js-value-lower")[1],
-    document.querySelectorAll(".js-value-upper")[1]
+        document.querySelectorAll(".js-value-lower")[1],
+        document.querySelectorAll(".js-value-upper")[1]
     ]
     sliderSecond.noUiSlider.on("update", function(values, handle) {
-        valueNoSlider[handle].innerHTML = Math.round(values[handle]);
+        valueNoSlider[handle].innerHTML = Math.round(values[handle]).toLocaleString('ru-RU') + "₽";
     })
 }

@@ -11,10 +11,10 @@
         margin-bottom: 40px;
     }
     &__filter-date-dropdown {
-        margin-bottom: 40px;
+        margin-bottom: 42px;
     }
     &__dropdown-expanded {
-        margin-bottom: 40px;
+        margin-bottom: 48px;
     }
     &__checkbox-buttons {
         margin-bottom: 38px;
@@ -29,7 +29,7 @@
         margin-bottom: 232px;
     }
     &__dropdown{
-        margin-bottom: 98px;
+        margin-bottom: 110px;
     }
     &__like-button {
         margin-bottom: 40px;
@@ -50,10 +50,10 @@
         margin-bottom: 20px;
     }
     &__dropdown-guest {
-        margin-bottom: 20px;
+        margin-bottom: 23px;
     }
     &__expandable-checkbox{
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     &__button {
         margin-bottom: 100px;
@@ -66,8 +66,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.mb104 {
-    margin-bottom: 104px;
+.mb101 {
+    margin-bottom: 101px;
 }
 .mb11 {
     margin-bottom: 11px;
@@ -138,6 +138,9 @@
     & input:not(:checked) + label::after {
         opacity: 0;
     }
+}
+.mb14{
+    margin-bottom: 14px;
 }
 .area__input-filter-date-dropdown {
     color:  $darkshade75;
@@ -243,10 +246,7 @@
 .area__expandable-checkbox-list li {
     line-height: 18px;
     color: $darkshade5;
-    margin: 0 0 8px 0px;
-    &:first-child {
-        margin-top: 5px;
-    }
+    margin: 0 0 9px 0px;
     &:last-child {
         margin-bottom: 0px;
     }
@@ -395,6 +395,7 @@
     text-fill-color: transparent;
     font-size: 48px;
     cursor: default;
+    right: 0;
 }
 .material-icons_arrow {
     right: 0;
@@ -452,9 +453,22 @@
 }
 .review {
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+.ml4 {
+    margin-left: 4px;
+}
+.review__img {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
     & img {
-        margin-top: -11px;
-        margin-left: -21px;
+        position: absolute;
+        top: -10px;
+        left: -20px;
     }
 }
 .review__name {
@@ -469,7 +483,6 @@
 .review__body {
     display: flex;
     & p {
-        margin-top: -6px;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
@@ -586,7 +599,7 @@
     color: $darkshade75;
 }
 .bullet-list li {
-    margin:0 0 0 21px;
+    margin:0 0 10px 20px;
     position: relative;
     &::before {
         content: "";
@@ -617,6 +630,9 @@
 }
 .mw150 {
     max-width: 150px;
+}
+.mw200 {
+    max-width: 200px;
 }
 .mr10 {
     margin-right: 10px;
