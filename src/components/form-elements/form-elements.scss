@@ -252,9 +252,11 @@
     }
 }
 .area__expandable-checkbox-list span {
+    display: inline-block;
     font-weight: 700;
     line-height: 18px;
     color: $darkshade75;
+    margin-bottom: 5px;
 }
 .area__expandable-checkbox-list p {
     font-size: 12px;
