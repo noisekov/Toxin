@@ -40,6 +40,7 @@
     "air-datepicker": "^3.3.1",
     "jquery": "^3.6.1",
     "jquery.maskedinput": "^1.4.1",
-    "nouislider": "^15.6.1"
+    "nouislider": "^15.6.1",
+    "paginationjs": "^2.1.5"
   }
 }

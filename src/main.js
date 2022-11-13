@@ -12,3 +12,5 @@ import './components/entry/entry';
 import './components/headers & footers/header/header';
 import 'jquery.maskedinput/src/jquery.maskedinput';
 import './components/field/field';
+
+import 'paginationjs/dist/pagination'

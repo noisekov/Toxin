@@ -42,7 +42,7 @@ document.addEventListener('click', (evt) => {
    }
 }) 
 //initialization calendar two input
-calInTwo = new AirDatepicker('#cal-two-input',{
+calInTwo = new AirDatepicker('.calendar-two',{
    container: ".date",
    selectedDates: [Date],
    onSelect ({date}) {
@@ -53,14 +53,14 @@ calInTwo = new AirDatepicker('#cal-two-input',{
    buttons: [clearBtn, apply],  
 });
 //initialization calendar one input
-onePicker = new AirDatepicker('#one-picker',{
+onePicker = new AirDatepicker('.area__input-filter-date-dropdown',{
    range: true,
    dateFormat: 'dd MMM',
    multipleDatesSeparator: ' - ',
    buttons: ['clear', apply],
 });
 //initialization calendar on page
-calendarInPage = new AirDatepicker('#calendar',{
+calendarInPage = new AirDatepicker('.calendar',{
    buttons: ['clear', apply],
    range: true,
 });
