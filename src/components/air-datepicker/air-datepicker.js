@@ -13,8 +13,8 @@ let apply = {
    }
 }
 //two input Dates
-let valueDate1 = document.querySelector(".js-cal-value_left");
-let valueDate2 = document.querySelector(".js-cal-value_right");
+let valLeft = document.querySelector(".js-cal-value_left");
+let valRight = document.querySelector(".js-cal-value_right");
 
 //btn clear
 let clearBtn = {
@@ -22,15 +22,15 @@ let clearBtn = {
    className:'clearBtn',
    onClick: () => {
       calInTwo.clear();
-      valueDate1.value = '';
-      valueDate2.value = '';
+      valLeft.value = '';
+      valRight.value = '';
    }
 }
 //show calendar when click on input
-valueDate1.addEventListener('click', () => {
+valLeft.addEventListener('click', () => {
    calInTwo.show();
 })
-valueDate2.addEventListener('click', () => {
+valRight.addEventListener('click', () => {
    calInTwo.show();
 })
 //hide calendar when click document
@@ -46,8 +46,8 @@ calInTwo = new AirDatepicker('.calendar-two',{
    container: ".date",
    selectedDates: [Date],
    onSelect ({date}) {
-      valueDate1.value = date[0].toLocaleDateString('ru');
-      valueDate2.value = date[1].toLocaleDateString('ru');
+      valLeft.value = date[0].toLocaleDateString('ru');
+      valRight.value = date[1].toLocaleDateString('ru');
    },
    range: true,
    buttons: [clearBtn, apply],  

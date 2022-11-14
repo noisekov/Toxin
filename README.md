@@ -2,7 +2,7 @@
 
 https://noisekov.github.io/Toxin/
 
-I use in this project:<br> material icons,<br> vanilla js,<br> noUislider(js),<br> jquery.maskedinput(jq),<br> air-datepicker(js),<br> pug mixins,<br> paginationjs(jq),<br> pixel perfect.
+I use in this project:<br> material icons,<br> vanilla js,<br> noUislider(js),<br> air-datepicker(js),<br> pug mixins,<br> pixel perfect,<br> jquery.maskedinput(jq).
 
 
 ```This page transfer and refactoring my past project on parcel https://noisekov.github.io/-metalamp-parcel-/```

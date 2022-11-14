@@ -9,10 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-} 
-.pagination__body li{
-    cursor: pointer;
-} 
+}
 .pagination__button {
     display: inline-flex;
     align-items: center;
@@ -21,6 +18,7 @@
     width: 40px;
     height: 40px;
     background: #ffffff;
+    cursor: pointer;
     &:first-child{
         display: none;
         position: relative;
@@ -34,6 +32,11 @@
         background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
         border-radius: 22px;
     }
+    &:hover {
+        border-radius: 22px;
+        background: $green;
+        color: #ffffff;
+    }
 }
 .pagination__button_active {
     color: #fff;
@@ -41,6 +44,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
     width: 40px;
     height: 40px;
     background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
@@ -54,11 +58,11 @@
 .mb16 {
     margin-bottom: 16px;
 }
-.material-icons_pagination-right {
+.material-icons__pagination_right {
     left: 8px;
     color: #ffffff;
 }
-.material-icons_pagination-left {
+.material-icons__pagination_left {
     left: 8px;
     color: #ffffff;
     transform:rotate(180deg)
