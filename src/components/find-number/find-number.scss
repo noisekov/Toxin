@@ -11,38 +11,8 @@
     line-height: 24px;
     color: $darkshade75;
 }
-.find-number__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.find-number__name {
-    font-weight: 700;
-    line-height: 17px;
-    color: $darkshade;
-}
 .find-number__dropdown{
     margin-bottom: 17px;
-}
-.find-number__name span:first-child {
-    font-size: 24px;
-    line-height: 29px;
-}
-.find-number__name span:last-child {
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: $purple;
-}
-.find-number__title {
-    font-size: 12px;
-    line-height: 18px;
-    color: $darkshade5;
-    & span {
-        font-weight: 700;
-        line-height: 18px;
-        color: $darkshade5;
-    }
 }
 .find-number__body-block{
     display: flex;

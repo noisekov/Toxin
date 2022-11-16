@@ -263,22 +263,7 @@
     line-height: 14px;
     color: $darkshade5;
 }
-.area__name {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: calc(15 / 12 * 100%);
-    text-transform: uppercase;
-    color: $darkshade;
-}
-.area__name-fn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 15px;
-    color: $darkshade5;  
-}
+
 .area__body {
     position: relative; 
 }
@@ -327,7 +312,7 @@
         } 
     }
 }
-.area__header {
+.area {
     margin-bottom: 5px;
     position: relative;
 }
@@ -646,10 +631,7 @@
     width: 266px;
     padding: 13px 40px 13px 15px;
 }
-.position-input_large {
-    width: 320px;
-    padding: 13px 30px 13px 15px;
-}
+
 
 .position-calendar {
     position: absolute;
