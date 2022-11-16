@@ -9,7 +9,7 @@ import './components/like-button/like-button';
 import './components/cards/cards';
 import './components/appartment/appartment';
 import './components/entry/entry';
-import './components/headers & footers/header/header';
+import './components/headers-footers/header/header';
 import 'jquery.maskedinput/src/jquery.maskedinput';
 import './components/field/field';
 import './components/pagination/pagination';
