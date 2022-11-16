@@ -1,8 +1,8 @@
 mixin field(plhold= "Email", nameFr="Default", text='Text field ')
     .mw320
-        fieldset.area__header
+        fieldset.area
             legend.area__name=text
-            span.area__name-fn=nameFr 
+            span.area__state=nameFr 
         input(class!=attributes.class).position-input_large(
             type="text"
             placeholder=`${plhold}`

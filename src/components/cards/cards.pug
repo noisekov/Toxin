@@ -16,28 +16,28 @@
             .mb40
                 include ../appartment/appartment.pug
             .appartment 
-                .appartment__photo
+                .appartment__slider
                     ul 
-                        li.appartment__img.current
+                        li.appartment__slider-img.current
                             img(src = require("../../images/appartment2.png"), alt="appartment")
-                        li.appartment__img
+                        li.appartment__slider-img
                             img(src = require("../../images/appartment1.png"), alt="appartment")
-                        li.appartment__img
+                        li.appartment__slider-img
                             img(src = require("../../images/appartment3.jpg"), alt="appartment")
-                        li.appartment__img
+                        li.appartment__slider-img
                             img(src = require("../../images/appartment2.png"), alt="appartment")
-                    .appartment__slider-bar 
+                    .appartment__dots 
                         ul
-                            button.appartment__slider-bar-dots.current
-                            button.appartment__slider-bar-dots
-                            button.appartment__slider-bar-dots
-                            button.appartment__slider-bar-dots
+                            button.appartment__dot.current
+                            button.appartment__dot
+                            button.appartment__dot
+                            button.appartment__dot
                 .appartment__body 
                     .appartment__title 
-                        .find-number__header.mb20
-                            .find-number__name №<span>840</span> <span></span>
-                            .find-number__title <span>9 990₽</span> в сутки
-                        .appartment-feedback
+                        .type-appart.mb20
+                            .type-appart__number №<span>840</span> <span></span>
+                            .type-appart__price <span>9 990₽</span> в сутки
+                        .appartment__feedback
                             fieldset
                                 .rate-button__group
                                     input.rate-button__input(type="radio" name="star-third" value="1" id="star-app-second-1")
@@ -55,7 +55,3 @@
                                     input.rate-button__input(type="radio" name="star-third" value="5" id="star-app-second-5" )
                                     label.rate-button__star(for="star-app-second-5" aria-label="perfect") 
                             .appartment-block <span>65</span> Отзывов
-            
-                    
-
-                

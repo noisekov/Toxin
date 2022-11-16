@@ -16,7 +16,7 @@ include ../field/field.pug
             .form-elements__date-dropdown
                 .date
                     .date-dropdown
-                        fieldset.area__header
+                        fieldset.area
                             legend.area__name Date dropdown
                         .area__body
                             span.material-icons expand_more
@@ -26,7 +26,7 @@ include ../field/field.pug
                                 autocomplete="off"
                                 )
                     .date-dropdown
-                        fieldset.area__header
+                        fieldset.area
                             legend.area__name Date dropdown
                         .area__body
                             span.material-icons expand_more
@@ -38,7 +38,7 @@ include ../field/field.pug
                     input(type="text").position-calendar.calendar-two
             .form-elements__filter-date-dropdown
                 .mw266
-                    label.area__header.area__name Filter date dropdown
+                    label.area.area__name Filter date dropdown
                     .area__body
                         span.material-icons expand_more
                         input.area__input-filter-date-dropdown.position-input_small(
@@ -48,7 +48,7 @@ include ../field/field.pug
                         )
             .form-elements__button
                 fieldset.mw266
-                    legend.area__name.area__header  Subscription text field
+                    legend.area__name.area  Subscription text field
                     input.footer-up__input.position-input_small(
                     type="text" 
                     placeholder="Email" 
@@ -59,9 +59,9 @@ include ../field/field.pug
                 include ../dropdown-default/dropdown-default.pug
             .form-elements__dropdown-expanded
                 .mw266
-                    .area__header
+                    .area
                         label.area__name Dropdown
-                        label.area__name-fn Expanded
+                        label.area__state Expanded
                     .area__body
                         span.material-icons expand_more
                         input.area__input-dropdown-default.position-input_small(
@@ -148,7 +148,7 @@ include ../field/field.pug
                 include ../rate-button/rate-button.pug
             .form-elements__dropdown
                 .mw320
-                    label.area__header.area__name Dropdown 
+                    label.area.area__name Dropdown 
                     .area__body
                         span.material-icons expand_more
                         input.area__input-dropdown-default.position-input_large(
@@ -197,7 +197,7 @@ include ../field/field.pug
                 include ../range-slider/range-slider.pug
             .form-elements__buttons
                 .mw266
-                    legend.area__name.area__header.mb15 Buttons
+                    legend.area__name.area.mb15 Buttons
                     .button
                         button.button-click.button-position click me
                         button.button-click_active click me
@@ -213,7 +213,7 @@ include ../field/field.pug
                 include ../pagination/pagination.pug
             .form-elements__dropdown
                 .mw320
-                    label.area__header.area__name Dropdown 
+                    label.area.area__name Dropdown 
                     .area__body
                         span.material-icons expand_more
                         input.area__input-dropdown-default.position-input_large(
@@ -246,7 +246,7 @@ include ../field/field.pug
                             button Применить
                             button Очистить
             .mw255
-                fieldset.area__header.mb15
+                fieldset.area.mb15
                     legend.area__name Bullet list
                 .area__body.bullet-list
                     ul 
