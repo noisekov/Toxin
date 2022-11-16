@@ -11,44 +11,51 @@
     justify-content: flex-start;
 }
 .pagination__button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     width: 40px;
     height: 40px;
     background: #ffffff;
+    border-radius: 22px;
     cursor: pointer;
-    &:first-child{
-        display: none;
-        position: relative;
-        border-radius: 22px;
-        background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
-        top: -4px;
-    }
-    &:last-child {
-        position: relative;
-        padding-top: 10px;
-        background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
-        border-radius: 22px;
-    }
     &:hover {
         border-radius: 22px;
         background: $green;
         color: #ffffff;
     }
 }
-.pagination__button_active {
-    color: #fff;
-    display: inline-flex;
-    justify-content: center;
+.pagination__button-arrow_left {
+    display: none;
+    position: relative;
+    background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
     align-items: center;
-    text-align: center;
-    cursor: pointer;
+    justify-content: center;
     width: 40px;
     height: 40px;
-    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
     border-radius: 22px;
+    cursor: pointer;
+}
+.pagination__button-arrow_right {
+    position: relative;
+    background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+.pagination__button-arrow_right.show {
+    display: flex;
+}
+.pagination__button-arrow_left.show {
+    display: flex;
+}
+.pagination__button.active {
+    color: #fff;
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
 }
 .pagination__count {
     line-height: 24px;
@@ -65,5 +72,5 @@
 .material-icons__pagination_left {
     left: 8px;
     color: #ffffff;
-    transform:rotate(180deg)
+    transform:rotate(180deg) translateY(50%);
 }
