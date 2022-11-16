@@ -1,12 +1,12 @@
 const appartments = document.querySelectorAll(".appartment");
 
 appartments.forEach(appartment => {
-    const appartDots = appartment.querySelectorAll(".appartment__slider-bar-dots");
-    const appartImg = appartment.querySelectorAll(".appartment__img");
+    const appartDots = appartment.querySelectorAll(".appartment__dot");
+    const appartImg = appartment.querySelectorAll(".appartment__slider-img");
 
     appartDots.forEach(dots => {
         dots.addEventListener("click", function(evt) {
-            if (evt.target.closest(".appartment__slider-bar-dots")){
+            if (evt.target.closest(".appartment__dot")){
                 appartDots.forEach(dot => {
                     dot.classList.remove("current");
                 })
