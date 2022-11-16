@@ -6,7 +6,6 @@
 @import "../components/headers & footers/footer/footer.scss";
 @import "../components/headers & footers/header/header.scss";
 @import "../components/headers & footers/footer-mobile/footer-mobile.scss";
-@import "../components/colors&type/colors&type.scss";
 @import "../components/form-elements/form-elements.scss";
 @import "../components/choice/choice.scss";
 @import "../components/cards/cards.scss";
@@ -24,6 +23,7 @@
 @import "../pages/room-details/room-details.scss";
 @import "../pages/sign-in/sign-in.scss";
 @import "../pages/search-room/search-room.scss";
+@import "../pages/colors-type/colors-type.scss";
 
 @font-face {
 	font-family: 'Montserrat';
