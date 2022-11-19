@@ -11,19 +11,27 @@ pagination.forEach(pagEl => {
             if (evt.target.closest('.pagination__button')) {
                 paginationBtn.forEach( allBtn => allBtn.classList.remove('active'));
                 btn.classList.add('active');
-                if (evt.target.closest('.pagination__button') !== paginationBtn[0]){
+                if (evt.target.closest('.pagination__button') !== paginationBtn[0]) {
                     paginationArrLeft.classList.add('show');
                 } else {
                     paginationArrLeft.classList.remove('show');
                 }
-                console.log(paginationBtn.length);
-                if (evt.target.closest('.pagination__button') == paginationBtn[paginationBtn.length-1]){
+                if (evt.target.closest('.pagination__button') == paginationBtn[paginationBtn.length-1]) {
                     paginationArrRight.classList.remove('show');
                 } else {
                     paginationArrRight.classList.add('show');
                 }
             }
         })
+    })
+
+
+    paginationArrLeft.addEventListener('click', function(evt) {
+        let index = [...paginationBtn]
+        .findIndex(btn => {
+            btn.classList.contains('active')
+        })
+        console.log(index)
     })
 })
 
