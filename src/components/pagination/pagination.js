@@ -27,10 +27,11 @@ pagination.forEach(pagEl => {
 
 
     paginationArrLeft.addEventListener('click', () => {
-        const findClassActiveinArr = Array.from(paginationBtn).map(x => x.classList.contains('active'));
+        const findClassActiveinArr = Array.from(paginationBtn)
+            .map(x => x.classList.contains('active'));
         paginationBtn[findClassActiveinArr.indexOf(true)].classList.remove('active');
-        paginationBtn[findClassActiveinArr.indexOf(true)-1].classList.add('active');
-        if (paginationBtn[findClassActiveinArr.indexOf(true)-1] === paginationBtn[0]) {
+        paginationBtn[findClassActiveinArr.indexOf(true) - 1].classList.add('active');
+        if (paginationBtn[findClassActiveinArr.indexOf(true) - 1] === paginationBtn[0]) {
             paginationArrLeft.classList.remove('show');
             paginationArrRight.classList.add('show');
         } else {
@@ -40,10 +41,11 @@ pagination.forEach(pagEl => {
     })
 
     paginationArrRight.addEventListener('click', ()  => {
-        const findClassActiveinArr = Array.from(paginationBtn).map(x => x.classList.contains('active'));
+        const findClassActiveinArr = Array.from(paginationBtn)
+            .map(x => x.classList.contains('active'));
         paginationBtn[findClassActiveinArr.indexOf(true)].classList.remove('active');
-        paginationBtn[findClassActiveinArr.indexOf(true)+1].classList.add('active');
-        if (paginationBtn[findClassActiveinArr.indexOf(true)+1] === paginationBtn[paginationBtn.length-1]) {
+        paginationBtn[findClassActiveinArr.indexOf(true) + 1].classList.add('active');
+        if (paginationBtn[findClassActiveinArr.indexOf(true) + 1] === paginationBtn[paginationBtn.length-1]) {
             paginationArrLeft.classList.add('show');
             paginationArrRight.classList.remove('show');
         } else {

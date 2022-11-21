@@ -26,13 +26,16 @@
     }
 }
 .pagination__button_disabled {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
     background: #ffffff;
     border-radius: 22px;
+    &.show {
+        display: flex;
+    }
 }
 .pagination__button-arrow_left {
     display: none;
