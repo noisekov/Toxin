@@ -1,14 +1,14 @@
-.area__like-button {
+.like {
     display: flex;
 }
-.like:checked,
-    .like:not(:checked){
+.like__input:checked,
+    .like__input:not(:checked){
         position: absolute;
         opacity: 0;
         visibility: hidden;
         z-index: -1;
 }
-.like:checked + label{
+.like__input:checked + label{
         position: relative;
         padding-left: 22px;
         line-height: 20px;
@@ -20,7 +20,7 @@
         color: $purple;
         border-radius: 10px;
 }
-.like:not(:checked) + label{
+.like__input:not(:checked) + label{
         position: relative;
         display: inline-block;
         padding-left: 22px;
@@ -30,7 +30,7 @@
         border-radius: 10px;
         cursor: pointer;
 }
-.like:not(:checked) + label::before{
+.like__input:not(:checked) + label::before{
     content: "";
     position: absolute;
     top: 0;
@@ -41,7 +41,7 @@
     border-radius: 10px;
     z-index: 2;
 }
-.like:checked + label::before{    
+.like__input:checked + label::before{    
         content: "";
         position: absolute;
         top: 0;
@@ -56,7 +56,7 @@
         }
 }
 
-.area__like-button-block {
+.like__body {
     font-size: 10px;
     line-height: 12px;
     color: $darkshade25;

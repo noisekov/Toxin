@@ -1,9 +1,8 @@
 //like counter
-const btnsLike = document.querySelectorAll(".js-like-color");
 const likeImg = document.querySelectorAll('.material-icons__like');
 const likeLabel = document.querySelectorAll(".js-like-count");
 
-btnsLike.forEach((btn, i) =>{
+likeLabel.forEach((btn, i) =>{
     btn.addEventListener("click", function(){
         let resultLikeCount;
         if (likeImg[i].textContent == "favorite_border"){
@@ -25,8 +24,8 @@ btnsLike.forEach((btn, i) =>{
 })
 
 //ES5
-// for (let i = 0; i < btnsLike.length; i++ ){
-//     btnsLike[i].addEventListener("click", function(){
+// for (let i = 0; i < likeLabel.length; i++ ){
+//     likeLabel[i].addEventListener("click", function(){
 //         if (likeImg[i].textContent == "favorite_border"){
 //             likeImg[i].classList.remove('material-icons__like');
 //             likeImg[i].classList.add('material-icons__like-color');
