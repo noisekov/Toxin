@@ -32,6 +32,10 @@
 .room-details__content {
 	display: flex;
 	justify-content: space-between;
+	@media (max-width:1140px) {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
 }
 .room-details__content-block{
 	display: flex;
@@ -44,6 +48,9 @@
 	display: flex;
 	width: 100%;
 	margin-bottom: 10px;
+	@media (max-width:767px) {
+		flex-direction: column-reverse;
+	}
 }
 .about-number {
 	display: flex;
@@ -53,6 +60,10 @@
 .impression__body {
 	display: flex;
 	justify-content: space-between;
+	@media (max-width:767px) {
+		margin-bottom: 20px;
+		justify-content: flex-start;
+	}
 }
 .impression__review {
 	width: 120px;
